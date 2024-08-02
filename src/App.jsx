@@ -1,15 +1,14 @@
-import Body from "./Components/Body"
-import Profile from "./Components/Profile"
+import Body from "./Components/Body";
+import Profile from "./Components/Profile";
 
 function App() {
-
-
   return (
-    <section className=" relative">
-      <Profile/>
-      <Body/>
+    <section className=" bg-gray-700 ">
+      <div className="">
+        <Body />
+      </div>
     </section>
-  )
+  );
 }
 
-export default App
+export default App;
