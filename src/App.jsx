@@ -3,7 +3,7 @@ import Profile from "./Components/Profile";
 
 function App() {
   return (
-    <section className=" bg-gray-700 ">
+    <section className="  ">
       <div className="">
         <Body />
       </div>

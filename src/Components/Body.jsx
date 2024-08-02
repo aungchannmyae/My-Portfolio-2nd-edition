@@ -1,25 +1,23 @@
 import React from "react";
+import Header from "./Header";
+import Container from "./Container";
+import AboutMe from "./AboutMe";
 
 const Body = () => {
-  const navBarItems = ["Profile", "About", "Resume", "Projects", "Contract"];
-
   return (
     <div className=" ">
-      <div>
-        <header>
-          <div className=" ">
-            <ul className=" flex items-center w-fit ml-auto bg-slate-500 rounded-lg">
-              {navBarItems.map((Item) => (
-                <li
-                  key={Math.random()}
-                  className=" mx-3 my-1 px-2 py-1 h-8 duration-200 border-[#df4f3e] hover:border-b-4 hover:border-opacity-100 hover:border-[#df4f3e]"
-                >
-                  {Item}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </header>
+      <div className=" relative">
+        <Header />
+        <Container>
+          <section>
+            <div>
+              <h1 className=" inline-block pb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
+                Resume
+              </h1>
+              
+            </div>
+          </section>
+        </Container>
       </div>
     </div>
   );
