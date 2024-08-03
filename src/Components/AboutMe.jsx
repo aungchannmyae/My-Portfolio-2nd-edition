@@ -6,11 +6,11 @@ const AboutMe = () => {
     <Container>
       <section className="">
         <div>
-          <h1 className=" inline-block pb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
+          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
             About Me
           </h1>
-          <p className=" text-stone-400 font-mono mt-5 mb-10">
-            STARTED LEARNING WEB DEVELOPMENT SINCE 2022. Now I am exploring my
+          <p className=" text-stone-400 font-mono mb-10">
+            Started learning web development since 2022. Now I am exploring my
             first time experiences as a Junior Web Developer Position. I
             consider myself a responsible and orderly person. Always looking
             forward the best opportunities in this Software Development
