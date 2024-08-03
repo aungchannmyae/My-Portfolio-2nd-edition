@@ -3,7 +3,7 @@ import React from "react";
 const Header = () => {
   const navBarItems = ["Profile", "About Me", "Resume", "Projects", "Contract"];
   return (
-    <header className=" absolute top-0 right-0">
+    <header className=" sticky top-0 right-0">
       <div className="">
         <ul className=" flex items-center w-fit ml-auto text-white bg-neutral-700 rounded-lg">
           {navBarItems.map((Item) => (
