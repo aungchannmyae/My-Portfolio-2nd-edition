@@ -239,7 +239,7 @@ const Resume = () => {
                 <div className=" shadow-2xl shadow-zinc-950 inline-block rounded-lg overflow-hidden">
                   <a href="https://www.freecodecamp.org/certification/aungchannmyae/responsive-web-design">
                     <img
-                      className="  rounded-lg w-full text-xl text-white mb-3"
+                      className=" hover:scale-125 duration-200 rounded-lg w-full text-xl text-white mb-3"
                       src={img[0]}
                       alt=""
                     />

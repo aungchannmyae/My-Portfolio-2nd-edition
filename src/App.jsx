@@ -5,6 +5,7 @@ import React from "react";
 import Resume from "./Components/Resume";
 import Contrast from "./Components/Contrast";
 import GeneralProvider from "./Context/GeneralProvider";
+import Portfolio from "./Components/Portfolio";
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
         <div className="">
           <div className=" relative">
             <Header />
+            <Profile/>
             <AboutMe />
             <Resume />
+            <Portfolio/>
             <Contrast />
           </div>
         </div>
