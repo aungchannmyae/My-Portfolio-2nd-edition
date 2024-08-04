@@ -27,6 +27,20 @@ const AboutMe = () => {
                 Deleniti, dolor.
               </p>
             </div>
+            <div className=" shadow-2xl shadow-zinc-950 p-5 inline-block rounded-lg">
+              <h1 className=" text-xl text-white mb-3">Frontend Developer</h1>
+              <p className=" text-stone-400 font-mono line-clamp-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti, dolor.
+              </p>
+            </div>
+            <div className=" shadow-2xl shadow-zinc-950 p-5 inline-block rounded-lg">
+              <h1 className=" text-xl text-white mb-3">Frontend Developer</h1>
+              <p className=" text-stone-400 font-mono line-clamp-3">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti, dolor.
+              </p>
+            </div>
           </section>
         </div>
       </section>

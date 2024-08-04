@@ -13,8 +13,8 @@ const Resume = () => {
               <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
                 Resume
               </h1>
-              <div className=" pl-3 flex flex-col gap-10">
-                <div id=" education">
+              <div className=" flex flex-col gap-10">
+                <div className=' pl-3' id=" education">
                   <h1 className=" text-white font-bold text-xl mb-5 flex items-end gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ const Resume = () => {
                     </div>
                   </section>
                 </div>
-                <div id=" language">
+                <div className=' pl-3' id=" language">
                   <h1 className=" text-white font-bold text-xl mb-5 flex items-end gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,8 +114,8 @@ const Resume = () => {
                     </div>
                   </section>
                 </div>
-                <div id=" skills">
-                  <h1 className=" text-white font-bold text-xl mb-5 flex items-end gap-2">
+                <div className='' id=" skills">
+                  <h1 className=" pl-3 text-white font-bold text-xl mb-5 flex items-end gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -193,7 +193,7 @@ const Resume = () => {
                     </div>
                   </section>
                 </div>
-                <div id=" experience">
+                <div className=' pl-3' id=" experience">
                   <h1 className=" text-white font-bold text-xl mb-5 flex items-end gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +220,7 @@ const Resume = () => {
                   </section>
                 </div>
                 <div id=" certificates">
-                  <h1 className=" text-white font-bold text-xl mb-5 flex items-end gap-2">
+                  <h1 className=" pl-3 text-white font-bold text-xl mb-5 flex items-end gap-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -238,19 +238,19 @@ const Resume = () => {
                     Certificates
                   </h1>
                   <section className=" grid grid-cols-3 gap-5">
-                    <div className=" shadow-2xl shadow-zinc-950 py-5 inline-block rounded-lg overflow-hidden">
+                    <div className=" shadow-2xl shadow-zinc-950 inline-block rounded-lg overflow-hidden">
                       <a href="https://www.freecodecamp.org/certification/aungchannmyae/responsive-web-design">
-                        <img className=" shadow-inner rounded-lg w-full text-xl text-white mb-3" src={img[0]} alt="" />
+                        <img className="  rounded-lg w-full text-xl text-white mb-3" src={img[0]} alt="" />
                       </a>
-                      <p className=" ml-[41px] text-stone-400 font-mono line-clamp-3">
+                      <p className=" mt-auto ml-[41px] text-stone-400 font-mono line-clamp-3">
                         Responsive Web Design at <span className=" text-gray-400"><a href="https://freecodecamp.org">freecodecamp.org</a></span>
                       </p>
                     </div>
-                    <div className=" shadow-2xl shadow-zinc-950 py-5 inline-block rounded-lg overflow-hidden">
+                    <div className=" shadow-2xl shadow-zinc-950 inline-block rounded-lg overflow-hidden">
                       <a href="https://burma.ac/certificates/25d0fd458ad8447db58455351c070c60">
                         <img className=" shadow-inner rounded-lg w-full text-xl text-white mb-3" src={img[1]} alt="" />
                       </a>
-                      <p className=" ml-[41px] text-stone-400 font-mono line-clamp-3">
+                      <p className=" mt-auto ml-[41px] text-stone-400 font-mono line-clamp-3">
                         Responsive Web Design at <span className=" text-gray-400"><a href="https://burma.ac">Burma Academy</a></span>
                       </p>
                     </div>
