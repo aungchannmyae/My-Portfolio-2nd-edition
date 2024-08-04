@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useCallback, useContext } from "react";
 import Container from "./Container";
+import { GeneralContext } from "../Context/GeneralProvider";
+import "animate.css";
 
 const Contrast = () => {
+  const {contrast, handleContrast} = useContext(GeneralContext);
   return (
-    <Container>
-      <section>
+    <section className={` ${ !contrast && ' animate__animated animate__fadeOut hidden'} animate__animated animate__fadeIn mb-10`}>
+      <Container>
         <div>
           <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
             Contrast
@@ -12,7 +15,7 @@ const Contrast = () => {
           <legend className=" inline-block text-white font-bold text-xl mb-10">
             Contrast Form
           </legend>
-          <fieldset className=" mb-10">
+          <fieldset className=" ">
             <form action="" method="post">
               <div className=" mb-5 shadow-2xl shadow-zinc-950 p-5 rounded-lg border border-white border-opacity-5 grid grid-cols-2 gap-2">
                 <div>
@@ -22,7 +25,6 @@ const Contrast = () => {
                     type="text"
                     name="name"
                     placeholder="Your Name : "
-                    autofocus
                     required
                     id="name"
                   ></input>
@@ -49,7 +51,7 @@ const Contrast = () => {
               </div>
               <div className=" flex items-center">
                 <button
-                  className=" shadow-2xl shadow-zinc-950 ml-auto px-2 py-1 hover:bg-[#df4f3e] duration-200 rounded-lg hover:text-black text-white text-xl font-bold font-mono"
+                  className=" shadow-2xl shadow-zinc-950 ml-auto px-2 py-1 hover:bg-[#df4f3e] duration-200 rounded hover:text-black text-white text-xl font-bold font-mono"
                   type="submit"
                 >
                   Send Message
@@ -58,8 +60,8 @@ const Contrast = () => {
             </form>
           </fieldset>
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 

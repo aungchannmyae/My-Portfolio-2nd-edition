@@ -1,13 +1,25 @@
-import Body from "./Components/Body";
+import AboutMe from "./Components/AboutMe";
+import Header from "./Components/Header";
 import Profile from "./Components/Profile";
+import React from "react";
+import Resume from "./Components/Resume";
+import Contrast from "./Components/Contrast";
+import GeneralProvider from "./Context/GeneralProvider";
 
 function App() {
   return (
-    <section className="  ">
-      <div className="">
-        <Body />
-      </div>
-    </section>
+    <GeneralProvider>
+      <section className="  ">
+        <div className="">
+          <div className=" relative">
+            <Header />
+            <AboutMe />
+            <Resume />
+            <Contrast />
+          </div>
+        </div>
+      </section>
+    </GeneralProvider>
   );
 }
 

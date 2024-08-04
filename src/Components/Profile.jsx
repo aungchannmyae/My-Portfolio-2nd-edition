@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GeneralContext } from '../Context/GeneralProvider'
 
 const Profile = () => {
+  const {profile, setProfile} = useContext(GeneralContext);
   return (
-    <div className=' '>
+    <section className={` ${ !profile && " hidden"} `}>
       <div>
         Profile
       </div>
-    </div>
+    </section>
   )
 }
 

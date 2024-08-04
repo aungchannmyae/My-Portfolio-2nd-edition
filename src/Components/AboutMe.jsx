@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "./Container";
+import GeneralProvider, { GeneralContext } from "../Context/GeneralProvider";
+import "animate.css";
 
 const AboutMe = () => {
+  const { aboutMe, HandleAboutMe } = useContext(GeneralContext);
   return (
-    <Container>
-      <section className="">
+    <section className={` ${ !aboutMe && 'hidden animate__animated animate__fadeOut' } mb-10 animate__animated animate__fadeIn`}>
+      <Container>
         <div>
           <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
             About Me
@@ -43,8 +46,8 @@ const AboutMe = () => {
             </div>
           </section>
         </div>
-      </section>
-    </Container>
+      </Container>
+    </section>
   );
 };
 
