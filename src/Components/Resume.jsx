@@ -5,9 +5,13 @@ import "animate.css";
 
 const Resume = () => {
   const img = ["../src/assets/photo1.png", "../src/assets/photo2.png"];
-  const {resume, handleResume} = useContext(GeneralContext);
+  const { resume, handleResume } = useContext(GeneralContext);
   return (
-    <section className={` ${ !resume &&  'animate__animated animate__fadeOut hidden'} animate__animated animate__fadeIn mb-10`}>
+    <section
+      className={` ${
+        !resume && "animate__animated animate__fadeOut hidden"
+      } animate__animated animate__fadeIn mb-10`}
+    >
       <Container>
         <div>
           <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
@@ -235,36 +239,43 @@ const Resume = () => {
                 </svg>
                 Certificates
               </h1>
-              <section className=" grid grid-cols-3 gap-5">
-                <div className=" shadow-2xl shadow-zinc-950 inline-block rounded-lg overflow-hidden">
-                  <a href="https://www.freecodecamp.org/certification/aungchannmyae/responsive-web-design">
-                    <img
-                      className=" hover:scale-125 duration-200 rounded-lg w-full text-xl text-white mb-3"
-                      src={img[0]}
-                      alt=""
-                    />
-                  </a>
-                  <p className=" mt-auto ml-[41px] text-stone-400 font-mono line-clamp-3">
-                    Responsive Web Design at{" "}
-                    <span className=" text-gray-400">
-                      <a href="https://freecodecamp.org">freecodecamp.org</a>
-                    </span>
-                  </p>
-                </div>
-                <div className=" shadow-2xl shadow-zinc-950 inline-block rounded-lg overflow-hidden">
-                  <a href="https://burma.ac/certificates/25d0fd458ad8447db58455351c070c60">
-                    <img
-                      className=" shadow-inner rounded-lg w-full text-xl text-white mb-3"
-                      src={img[1]}
-                      alt=""
-                    />
-                  </a>
-                  <p className=" mt-auto ml-[41px] text-stone-400 font-mono line-clamp-3">
-                    Responsive Web Design at{" "}
-                    <span className=" text-gray-400">
-                      <a href="https://burma.ac">Burma Academy</a>
-                    </span>
-                  </p>
+
+              <section>
+                <div className=" grid grid-cols-3 gap-5">
+                  <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
+                    <div className=" h-[220px] overflow-hidden ">
+                      <a href="">
+                        <img
+                          className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg w-full"
+                          src={img[0]}
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <p className=" ml-[41px] py-3 text-stone-400 font-mono line-clamp-3">
+                      Responsive Web Design at{" "}
+                      <span className=" text-gray-400">
+                        <a href="https://freecodecamp.org">freecodecamp.org</a>
+                      </span>
+                    </p>
+                  </div>
+                  <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
+                    <div className=" h-[220px] overflow-hidden ">
+                      <a href="">
+                        <img
+                          className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg w-full"
+                          src={img[1]}
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <p className=" ml-[41px] py-3 text-stone-400 font-mono line-clamp-3">
+                      CS50T Understanding Technology at{" "}
+                      <span className=" text-gray-400">
+                        <a href="https://burma.ac">Burma Academy</a>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </section>
             </div>

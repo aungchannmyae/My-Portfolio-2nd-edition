@@ -15,7 +15,7 @@ const Profile = () => {
         <div className=" w-full grid grid-cols-3 ">
           <section className=" flex items-center justify-center col-span-1">
             <div className=" w-3/4 m-auto">
-              <img className=" rounded-full" src={img[0]} alt="" />
+              <img className=" select-none rounded-full" src={img[0]} alt="" />
             </div>
           </section>
           <section className=" col-span-2 bg-blue">
@@ -213,7 +213,7 @@ const Profile = () => {
                         Viber
                       </h1>
                       <p className=" text-lg text-stone-400">
-                        <a href="tel:+959400297397">+959 400 297 397</a>
+                        <a href="">+959 400 297 397</a>
                       </p>
                     </div>
                   </li>

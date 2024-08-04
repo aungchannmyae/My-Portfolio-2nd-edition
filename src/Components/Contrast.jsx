@@ -196,7 +196,7 @@ const Contrast = () => {
                   Viber
                 </h1>
                 <p className=" text-lg text-stone-400">
-                  <a href="tel:+959400297397">+959 400 297 397</a>
+                  <a href="">+959 400 297 397</a>
                 </p>
               </div>
             </li>
