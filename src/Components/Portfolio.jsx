@@ -3,7 +3,7 @@ import { GeneralContext } from "../Context/GeneralProvider";
 import Container from "./Container";
 
 const Portfolio = () => {
-  const { portfolio, setPortfolio } = useContext(GeneralContext);
+  const { portfolio, handlePortfolio } = useContext(GeneralContext);
   return (
     <section
       className={` ${
@@ -12,11 +12,11 @@ const Portfolio = () => {
     >
       <Container>
         <div>
-          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] text-2xl text-white font-bold ">
+          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] xl:text-3xl lg:text-3xl text-white font-bold ">
             Projects
           </h1>
           <section>
-            <div className=" grid grid-cols-3 gap-5">
+            <div className=" duration-200 grid xl:grid-cols-3 lg:grid-cols-2 xl:gap-5 lg:gap-10">
               <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
                 <div className=" h-[200px] overflow-hidden ">
                   <a href="">
