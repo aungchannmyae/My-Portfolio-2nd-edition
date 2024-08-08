@@ -14,12 +14,12 @@ const Resume = () => {
     >
       <Container>
         <div>
-          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] xl:text-3xl lg:text-3xl text-white font-bold ">
+          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] max-lg:pb-3 max-lg:mb-3 max-lg:text-3xl xl:text-3xl lg:text-3xl text-white font-bold ">
             Resume
           </h1>
-          <div className=" flex flex-col gap-10">
+          <div className=" flex flex-col gap-6">
             <div className=" pl-3" id=" education">
-              <h1 className=" text-white font-bold xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
+              <h1 className=" text-white font-bold max-lg:mb-3 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -38,44 +38,44 @@ const Resume = () => {
               </h1>
               <section>
                 <div>
-                  <ul className=" text-[#df4f3e]  list-inside list-disc">
+                  <ul className=" text-[#df4f3e] list-inside list-disc">
                     <li className=" mb-2">
-                      <h1 className=" ml-[18px] inline-block xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
                         B.E.H.S (2) Insein
                       </h1>
-                      <p className=" xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
+                      <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         2019
                       </p>
-                      <p className=" xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
+                      <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         Undergraduate
                       </p>
                     </li>
                     <li className=" mb-2">
-                      <h1 className=" ml-[18px] inline-block xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
-                        West Yangon Technology University
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                        West Yangon<br className="sm:hidden"></br>Technology University
                       </h1>
-                      <p className=" xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
+                      <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         2019
                       </p>
-                      <p className=" xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
+                      <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         First Year Mechatronics Specialization
                       </p>
                     </li>
                     <li className=" mb-2">
-                      <h1 className=" ml-[18px] inline-block xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
                         West Yangon University
                       </h1>
-                      <p className=" xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
+                      <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         2024 - <span>{new Date().getFullYear()}</span>
                       </p>
 
-                      <p className=" xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
+                      <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         First Year E-Major (Distance) Specialization
                       </p>
                     </li>
                     <li className=" ">
-                      <h1 className=" ml-[18px] inline-block xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
-                        Started Learning Web Development In MMS-IT Since 2022
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                        Started Learning Web<br className=" sm:hidden"></br>Development In MMS-IT<br className=" sm:hidden"></br>Since 2022
                       </h1>
                     </li>
                   </ul>
@@ -83,7 +83,7 @@ const Resume = () => {
               </section>
             </div>
             <div className=" pl-3" id=" language">
-              <h1 className=" text-white font-bold xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
+              <h1 className=" text-white font-bold max-lg:mb-6 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -104,12 +104,12 @@ const Resume = () => {
                 <div>
                   <ul className=" text-[#df4f3e] list-inside list-disc">
                     <li className=" mb-2">
-                      <h1 className=" ml-[18px] inline-block xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
                         Native Burmese.
                       </h1>
                     </li>
                     <li className="">
-                      <h1 className=" ml-[18px] inline-block xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
                         Intermediate English.
                       </h1>
                     </li>
@@ -118,7 +118,7 @@ const Resume = () => {
               </section>
             </div>
             <div className="" id=" skills">
-              <h1 className=" pl-3 text-white font-bold xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
+              <h1 className=" pl-3 text-white font-bold max-lg:mb-6 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -136,7 +136,7 @@ const Resume = () => {
                 Skill
               </h1>
               <section>
-                <div className=" shadow-2xl shadow-zinc-950 xl:text-xl lg:text-xl rounded-lg py-2">
+                <div className=" shadow-2xl shadow-zinc-950 max-lg:text-lg xl:text-xl lg:text-xl rounded-lg py-2">
                   <div>
                     <h1 className=" ml-[41px] mb-2 lg:block xl:inline-block text-white font-semibold tracking-wider">
                       Responsive Web Design
@@ -175,10 +175,10 @@ const Resume = () => {
                       Basic Knowledges in PHP, MySQL Database
                     </h1>
                     <span className="lg:block xl:inline-block ml-[41px] lg:mb-3 text-white tex font-mono">
-                      ( 45% )
+                      ( 50% )
                     </span>
                     <span className=" block mx-auto mb-5 w-[93%] h-[5px] rounded-lg bg-neutral-700">
-                      <p className=" w-5/12 h-full bg-[#df4f3e] rounded-lg"></p>
+                      <p className=" w-6/12 h-full bg-[#df4f3e] rounded-lg"></p>
                     </span>
                   </div>
                   <div className=" ">
@@ -197,7 +197,7 @@ const Resume = () => {
               </section>
             </div>
             <div className=" pl-3" id=" experience">
-              <h1 className=" text-white font-bold xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
+              <h1 className=" text-white font-bold max-lg:mb-6 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -215,14 +215,14 @@ const Resume = () => {
                 Work Experience
               </h1>
               <section>
-                <p className=" xl:text-base lg:text-lg mx-[41px] text-stone-400 font-mono">
+                <p className=" max-lg:text-lg xl:text-base lg:text-lg lg:mx-[41px] text-stone-400 font-mono">
                   Software Developer who is seeking the work Experiences in the
                   position as an internship or junior Front End Developer.
                 </p>
               </section>
             </div>
             <div id=" certificates">
-              <h1 className=" pl-3 text-white font-bold xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
+              <h1 className=" pl-3 text-white font-bold max-lg:mb-6 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-5 flex items-end gap-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -241,7 +241,7 @@ const Resume = () => {
               </h1>
 
               <section>
-                <div className=" duration-300 grid xl:grid-cols-3 lg:grid-cols-2 xl:gap-5 lg:gap-10">
+                <div className=" duration-300 grid max-sm:grid-cols-1 max-sm:gap-6 xl:grid-cols-3 lg:grid-cols-2 xl:gap-5 lg:gap-10">
                   <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
                     <div className=" h-[220px] overflow-hidden ">
                       <a href="">

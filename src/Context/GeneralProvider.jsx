@@ -13,7 +13,7 @@ const GeneralProvider = ({ children }) => {
     }else{
         setAboutMe(true);
     }
-    console.log('uClickedAboutMe');
+    setSideBar(!sideBar);
   };
 
   const [resume, setResume] = useState(false);
@@ -27,7 +27,7 @@ const GeneralProvider = ({ children }) => {
     }else{
         setResume(true);
     }
-    console.log('uClickedResume');
+    setSideBar(!sideBar);
   };
 
   const [portfolio, setPortfolio] = useState(false);
@@ -41,7 +41,7 @@ const GeneralProvider = ({ children }) => {
     }else{
         setPortfolio(true);
     }
-    console.log('uClickedPortfolio');
+    setSideBar(!sideBar);
   };
 
   const [contrast, setContrast] = useState(false);
@@ -55,7 +55,7 @@ const GeneralProvider = ({ children }) => {
     }else{
         setContrast(true);
     }
-    console.log('uClickedContrast');
+    setSideBar(!sideBar);
   };
 
   const [profile, setProfile] = useState(true);
@@ -69,7 +69,7 @@ const GeneralProvider = ({ children }) => {
     }else{
         setProfile(true);
     }
-    console.log('uClickedProfile');
+    setSideBar(!sideBar);
   };
 
   const [sideBar , setSideBar] = useState(false);

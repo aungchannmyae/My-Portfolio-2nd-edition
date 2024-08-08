@@ -14,11 +14,11 @@ const Contrast = () => {
     >
       <Container>
         <div>
-          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] xl:text-3xl lg:text-3xl text-white font-bold ">
+          <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] max-lg:mb-3 max-lg:pb-3 max-lg:text-3xl xl:text-3xl lg:text-3xl text-white font-bold ">
             Contrast
           </h1>
           <ContrastDetail/>
-          <legend className=" inline-block text-white font-bold xl:text-2xl lg:text-2xl mb-10">
+          <legend className=" inline-block text-white font-bold max-lg:mb-6 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-10">
             Contrast Form
           </legend>
           <fieldset className=" ">

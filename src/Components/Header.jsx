@@ -18,8 +18,8 @@ const Header = () => {
     sideBar,
   } = useContext(GeneralContext);
   return (
-    <header className=" select-none animate__animated animate__slideInDown lg:w-full z-50 sticky bg-stone-900 bg-opacity-70 top-0 right-0">
-      <section className=" max-lg:inline-block lg:hidden justify-center items-center px-3 py-2">
+    <header className=" select-none animate__animated animate__slideInDown lg:w-full z-50 sticky max-lg:bg-black max-lg:bg-opacity-50 top-0 right-0">
+      <section className=" max-lg:flex lg:hidden justify-end items-center px-3 py-2">
         <svg
           onClick={handleSideBar}
           xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +28,8 @@ const Header = () => {
           strokeWidth={1.5}
           stroke="currentColor"
           className={` ${
-            sideBar && " "
-          } size-8 rounded-lg text-[#df4f3e] hover:bg-zinc-800`}
+            sideBar ? " rotate-[540deg] duration-500" : " rotate-0 duration-500"
+          } size-10 rounded-lg text-[#df4f3e] hover:bg-zinc-800`}
         >
           <path
             strokeLinecap="round"

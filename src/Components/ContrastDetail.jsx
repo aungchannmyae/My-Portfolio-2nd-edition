@@ -3,7 +3,7 @@ import React from 'react'
 const ContrastDetail = () => {
   return (
     <>
-    <ul className=" duration-200 text-[#df4f3e] grid xl:grid-cols-3 lg:grid-cols-2 mb-10">
+    <ul className=" max-lg:mb-6 max-sm:px-5 max-sm:gap-1 duration-200 text-[#df4f3e] grid xl:grid-cols-3 lg:grid-cols-2 mb-10">
             <li className=" xl:mb-2 lg:mb-5 flex bg-slate justify-start items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
