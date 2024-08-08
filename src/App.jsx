@@ -6,21 +6,19 @@ import Resume from "./Components/Resume";
 import Contrast from "./Components/Contrast";
 import GeneralProvider from "./Context/GeneralProvider";
 import Portfolio from "./Components/Portfolio";
+import SideHeader from "./Components/SideHeader";
 
 function App() {
   return (
     <GeneralProvider>
-      <section className="  ">
-        <div className="">
-          <div className=" relative">
-            <Header />
-            <Profile/>
-            <AboutMe />
-            <Resume />
-            <Portfolio/>
-            <Contrast />
-          </div>
-        </div>
+      <section className="selection:bg-[#df4f3e] selection:text-black rounded-2xl bg-zinc-800 mx-auto md:my-0 xl:my-10 lg:my-24 md:w-screen max-h-screen lg:w-[800px] lg:h-[1000px] xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative">
+        <Header />
+        <Profile />
+        <AboutMe />
+        <Resume />
+        <Portfolio />
+        <Contrast />
+        <SideHeader />
       </section>
     </GeneralProvider>
   );

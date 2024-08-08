@@ -71,6 +71,11 @@ const GeneralProvider = ({ children }) => {
     }
     console.log('uClickedProfile');
   };
+
+  const [sideBar , setSideBar] = useState(false);
+  const handleSideBar = () => {
+    setSideBar(!sideBar);
+  }
   return (
     <GeneralContext.Provider
       value={{
@@ -84,6 +89,8 @@ const GeneralProvider = ({ children }) => {
         handleContrast,
         profile,
         handleProfile,
+        sideBar,
+        handleSideBar
       }}
     >
       {children}
