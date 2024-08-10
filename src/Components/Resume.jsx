@@ -241,7 +241,7 @@ const Resume = () => {
               </h1>
 
               <section>
-                <div className=" duration-300 grid max-sm:grid-cols-1 max-sm:gap-6 xl:grid-cols-3 lg:grid-cols-2 xl:gap-5 lg:gap-10">
+                <div className=" duration-300 grid max-sm:grid-cols-1 max-lg:gap-6 xl:grid-cols-3 lg:grid-cols-2 xl:gap-5 lg:gap-10">
                   <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
                     <div className=" h-[220px] overflow-hidden ">
                       <a href="">

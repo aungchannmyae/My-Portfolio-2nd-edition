@@ -23,8 +23,8 @@ const SideHeader = () => {
       <section
         className={` ${
           !sideBar &&
-          " -top-60 select-none duration-600 animate__animated animate__slideOutUp"
-        } max-lg:inline-block lg:hidden select-none animate__animated animate__slideInDown fixed top-14 right-1 rounded-md bg-stone-600 py-2 duration-200 mx-1  `}
+          " top-1 duration-600 animate__animated animate__slideOutUp"
+        } max-lg:inline-block lg:hidden select-none animate__animated animate__slideInDown fixed top-16 right-1 max-sm:w-32 max-lg:w-40 rounded-md bg-stone-600 py-1 duration-200 mx-1  `}
       >
         <div className=" ">
           <ul className=" flex flex-col gap-1 justify-center">

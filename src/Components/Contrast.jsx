@@ -18,7 +18,7 @@ const Contrast = () => {
             Contrast
           </h1>
           <ContrastDetail/>
-          <legend className=" inline-block text-white font-bold max-lg:mb-6 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-10">
+          <legend className=" inline-block text-white font-bold max-lg:mb-3 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-10">
             Contrast Form
           </legend>
           <fieldset className=" ">

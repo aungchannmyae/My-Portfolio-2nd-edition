@@ -12,7 +12,7 @@ function App() {
 
   return (
     <GeneralProvider>
-      <section className="selection:bg-[#df4f3e] selection:text-black rounded-2xl bg-zinc-800 mx-auto max-sm:my-0 xl:my-10 lg:my-24 max-lg:w-screen max-lg:h-screen lg:w-[800px] lg:h-[1000px] xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative">
+      <section className="selection:bg-[#df4f3e] selection:text-black rounded-2xl bg-zinc-800 mx-auto max-sm:my-0 xl:my-12 max-xl:w-screen max-xl:h-screen xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative">
         <Header />
         <Profile />
         <AboutMe />

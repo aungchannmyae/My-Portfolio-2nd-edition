@@ -28,7 +28,7 @@ const Header = () => {
           strokeWidth={1.5}
           stroke="currentColor"
           className={` ${
-            sideBar ? " rotate-[540deg] duration-500" : " rotate-0 duration-500"
+            sideBar ? " rotate-[900deg] duration-700" : " rotate-0 duration-700"
           } size-10 rounded-lg text-[#df4f3e] hover:bg-zinc-800`}
         >
           <path
