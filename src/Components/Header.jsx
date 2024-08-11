@@ -39,14 +39,14 @@ const Header = () => {
         </svg>
       </section>
       <div className=" bg-stone-600 flex">
-        <ul className="max-lg:hidden xl:px-3 xl:pt-3 lg:px-3 lg:pt-3 xl:text-base lg:text-lg flex gap-1 items-center text-white ">
+        <ul className="max-lg:hidden xl:px-3 xl:pt-3 lg:px-3 lg:pt-3 xl:text-base lg:text-lg flex gap-1 items-center text-stone-400 ">
           <li
             onClick={handleProfile}
             className={` ${
               !profile
-                ? " bg-transparent text-black hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 rounded-t-lg`}
+                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
+                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-9 after:bg-[#df4f3e] bg-zinc-800"
+            } cursor-pointer  xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 relative flex justify-center rounded-t-lg`}
           >
             Profile
           </li>
@@ -54,9 +54,9 @@ const Header = () => {
             onClick={handleAboutMe}
             className={` ${
               !aboutMe
-                ? " bg-transparent text-black hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 rounded-t-lg`}
+                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
+                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
+            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
           >
             About Me
           </li>
@@ -64,9 +64,9 @@ const Header = () => {
             onClick={handleResume}
             className={` ${
               !resume
-                ? " bg-transparent text-black hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 rounded-t-lg`}
+                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
+                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
+            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
           >
             Resume
           </li>
@@ -74,9 +74,9 @@ const Header = () => {
             onClick={handlePortfolio}
             className={` ${
               !portfolio
-                ? " bg-transparent text-black hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 rounded-t-lg`}
+                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
+                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
+            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
           >
             Projects
           </li>
@@ -84,9 +84,9 @@ const Header = () => {
             onClick={handleContrast}
             className={` ${
               !contrast
-                ? " bg-transparent text-black hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " bg-zinc-800"
-            } cursor-pointer xl:w-[150px] p xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 rounded-t-lg`}
+                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
+                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
+            } cursor-pointer xl:w-[150px] p xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
           >
             Contrast
           </li>

@@ -18,8 +18,8 @@ const Profile = () => {
           <section className=" flex md:items-center justify-center max-md:col-span-1 md:col-span-2 lg:col-span-1">
             <div className=" max-sm:w-full max-md:w-8/12 md:w-10/12 xl:w-3/4 lg:w-12/12 xl:m-auto">
               <img
-                className=" select-none max-sm:rounded-[100px] max-lg:rounded-full xl:rounded-full lg:rounded-full"
-                src={img[0]}
+                className=" select-none max-sm:rounded-full max-lg:rounded-full xl:rounded-full lg:rounded-full"
+                src="../public/Aung Chan Myae.jpg"
                 alt=""
               />
             </div>
