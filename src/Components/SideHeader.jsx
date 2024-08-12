@@ -7,13 +7,13 @@ const SideHeader = () => {
     handleAboutMe,
     handleResume,
     handlePortfolio,
-    handleContrast,
+    handleContact,
     handleProfile,
     handleSideBar,
     aboutMe,
     resume,
     portfolio,
-    contrast,
+    contact,
     profile,
     sideBar,
   } = useContext(GeneralContext);
@@ -23,8 +23,8 @@ const SideHeader = () => {
       <section
         className={` ${
           !sideBar &&
-          " -top-16 duration-200 animate__animated animate__slideOutUp"
-        } max-lg:inline-block lg:hidden select-none animate__animated animate__slideInDown fixed top-16 right-1 max-sm:w-40 max-lg:w-60 rounded-md bg-stone-600 py-1 duration-200 mx-1  `}
+          " -translate-y-80 duration-500 "
+        } max-lg:inline-block lg:hidden select-none fixed top-16 right-1 max-sm:w-40 max-lg:w-60 rounded-md bg-stone-600 py-1 duration-500 mx-1  `}
       >
         <div className=" ">
           <ul className=" flex flex-col gap-1 justify-center text-xl">
@@ -101,9 +101,9 @@ const SideHeader = () => {
               Projects
             </li>
             <li
-              onClick={handleContrast}
+              onClick={handleContact}
               className={`${
-                contrast ? "bg-zinc-800 text-white flex justify-start pl-0 duration-200" : " pl-9"
+                contact ? "bg-zinc-800 text-white flex justify-start pl-0 duration-200" : " pl-9"
               } text-stone-400  hover:text-white duration-100 hover:bg-zinc-800 px-5 py-1`}
             >
               <svg
@@ -112,11 +112,11 @@ const SideHeader = () => {
                 height="36"
                 fill="#df4f3e"
                 viewBox="0 0 256 256"
-                className={` ${ !contrast && ' hidden'}`}
+                className={` ${ !contact && ' hidden'}`}
               >
                 <path d="M144,128a16,16,0,1,1-16-16A16,16,0,0,1,144,128Z"></path>
               </svg>
-              Contrast
+              Contact
             </li>
           </ul>
         </div>

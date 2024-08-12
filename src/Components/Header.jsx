@@ -7,13 +7,13 @@ const Header = () => {
     handleAboutMe,
     handleResume,
     handlePortfolio,
-    handleContrast,
+    handleContact,
     handleProfile,
     handleSideBar,
     aboutMe,
     resume,
     portfolio,
-    contrast,
+    contact,
     profile,
     sideBar,
   } = useContext(GeneralContext);
@@ -81,14 +81,14 @@ const Header = () => {
             Projects
           </li>
           <li
-            onClick={handleContrast}
+            onClick={handleContact}
             className={` ${
-              !contrast
+              !contact
                 ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
                 : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
             } cursor-pointer xl:w-[150px] p xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
           >
-            Contrast
+            Contact
           </li>
         </ul>
       </div>
@@ -113,7 +113,7 @@ export default Header;
           <li onClick={handlePortfolio} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
             Projects
           </li>
-          <li onClick={handleContrast} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-            Contrast
+          <li onClick={handleContact} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
+            Contact
           </li>
         </ul> */}

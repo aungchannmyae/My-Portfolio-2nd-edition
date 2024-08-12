@@ -6,7 +6,7 @@ const GeneralProvider = ({ children }) => {
   const handleAboutMe = () => {
     setResume(false);
     setPortfolio(false);
-    setContrast(false);
+    setContact(false);
     setProfile(false);
     if(aboutMe){
         setAboutMe(true);
@@ -18,9 +18,9 @@ const GeneralProvider = ({ children }) => {
 
   const [resume, setResume] = useState(false);
   const handleResume = () => {
-    setAboutMe(false);
+    setAboutMe(false); 
     setPortfolio(false);
-    setContrast(false);
+    setContact(false);
     setProfile(false);
     if(aboutMe){
         setResume(true);
@@ -34,7 +34,7 @@ const GeneralProvider = ({ children }) => {
   const handlePortfolio = () => {
     setResume(false);
     setAboutMe(false);
-    setContrast(false);
+    setContact(false);
     setProfile(false);
     if(aboutMe){
         setPortfolio(true);
@@ -44,16 +44,16 @@ const GeneralProvider = ({ children }) => {
     setSideBar(!sideBar);
   };
 
-  const [contrast, setContrast] = useState(false);
-  const handleContrast = () => {
+  const [contact, setContact] = useState(false);
+  const handleContact = () => {
     setResume(false);
     setPortfolio(false);
     setAboutMe(false);
     setProfile(false);
     if(aboutMe){
-        setContrast(true);
+        setContact(true);
     }else{
-        setContrast(true);
+        setContact(true);
     }
     setSideBar(!sideBar);
   };
@@ -62,7 +62,7 @@ const GeneralProvider = ({ children }) => {
   const handleProfile = () => {
     setResume(false);
     setPortfolio(false);
-    setContrast(false);
+    setContact(false);
     setAboutMe(false);
     if(aboutMe){
         setProfile(true);
@@ -85,8 +85,8 @@ const GeneralProvider = ({ children }) => {
         handleResume,
         portfolio,
         handlePortfolio,
-        contrast,
-        handleContrast,
+        contact,
+        handleContact,
         profile,
         handleProfile,
         sideBar,

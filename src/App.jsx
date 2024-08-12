@@ -3,10 +3,10 @@ import Header from "./Components/Header";
 import Profile from "./Components/Profile";
 import React, { useContext } from "react";
 import Resume from "./Components/Resume";
-import Contrast from "./Components/Contrast";
 import GeneralProvider, { GeneralContext } from "./Context/GeneralProvider";
 import Portfolio from "./Components/Portfolio";
 import SideHeader from "./Components/SideHeader";
+import Contact from "./Components/Contact";
 
 function App() {
 
@@ -18,7 +18,7 @@ function App() {
         <AboutMe />
         <Resume />
         <Portfolio />
-        <Contrast />
+        <Contact />
         <SideHeader />
       </section>
     </GeneralProvider>
