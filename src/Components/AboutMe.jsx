@@ -25,26 +25,13 @@ const AboutMe = () => {
           </h1>
           <section className=" duration-200 grid max-sm:grid-cols-1 max-lg:gap-4 grid-cols-2 xl:gap-5 lg:gap-8">
             <div className=" shadow-2xl shadow-zinc-950 p-5 inline-block rounded-lg">
-              <h1 className=" max-lg:text-xl xl:text-xl lg:text-xl text-white mb-3">Frontend Developer</h1>
-              <p className=" text-stone-400 font-mono line-clamp-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deleniti, dolor.
+              <h1 className=" underline underline-offset-2 max-lg:text-xl xl:text-xl lg:text-xl text-white mb-3">Frontend Developer</h1>
+              <p className=" text-stone-400 text-lg font-mono line-clamp-3">
+              Bringing visual designs to life in a way that is interactive, efficient, and user-friendly.
               </p>
             </div>
-            <div className=" max-lg:text-xl shadow-2xl shadow-zinc-950 p-5 inline-block rounded-lg">
-              <h1 className=" xl:text-xl lg:text-xl text-white mb-3">Frontend Developer</h1>
-              <p className=" text-stone-400 font-mono line-clamp-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deleniti, dolor.
-              </p>
-            </div>
-            <div className=" max-lg:text-xl shadow-2xl shadow-zinc-950 p-5 inline-block rounded-lg">
-              <h1 className=" xl:text-xl lg:text-xl text-white mb-3">Frontend Developer</h1>
-              <p className=" text-stone-400 font-mono line-clamp-3">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Deleniti, dolor.
-              </p>
-            </div>
+            
+            
           </section>
         </div>
       </Container>

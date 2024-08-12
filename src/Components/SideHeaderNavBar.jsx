@@ -13,13 +13,13 @@ const SideHeaderNavBar = ({nav: {id, name, isActive}}) => {
       className={`${
         isActive
           ? "bg-zinc-800 text-white flex justify-start pl-0 duration-200"
-          : " pl-9"
+          : " pl-7"
       } text-stone-400  hover:text-white duration-100 hover:bg-zinc-800 px-5 py-1`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="36"
-        height="36"
+        width="28"
+        height="28"
         fill="#df4f3e"
         viewBox="0 0 256 256"
         className={` ${!isActive && " hidden "}`}

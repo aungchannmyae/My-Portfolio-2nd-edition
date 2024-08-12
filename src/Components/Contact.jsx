@@ -22,13 +22,13 @@ const Contact = () => {
           <legend className=" inline-block text-white font-bold max-lg:mb-3 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-10">
             Contact Form
           </legend>
-          <fieldset className=" ">
+          <fieldset className=" cursor-not-allowed blur-[2px] opacity-45 disabled:opacity-50">
             <form action="" method="post">
               <div className=" mb-5 shadow-2xl shadow-zinc-950 p-5 rounded-lg border border-white border-opacity-5 grid grid-cols-2 gap-2">
                 <div>
                   {/* <label className=" ml-[18px] inline-block text-white font-semibold tracking-wider" for="name">Your Name : </label> */}
                   <input
-                    className=" focus:outline-dashed outline-[#df4f3e] w-full bg-neutral-700 text-stone-400 px-5 py-2 rounded"
+                    className=" cursor-not-allowed focus:outline-dashed outline-[#df4f3e] w-full bg-neutral-700 text-stone-400 px-5 py-2 rounded"
                     type="text"
                     name="name"
                     placeholder="Your Name : "
@@ -38,7 +38,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <input
-                    className=" focus:outline-dashed outline-[#df4f3e] w-full bg-neutral-700 text-slate-400 px-5 py-2 rounded"
+                    className=" cursor-not-allowed focus:outline-dashed outline-[#df4f3e] w-full bg-neutral-700 text-slate-400 px-5 py-2 rounded"
                     type="email"
                     name="email"
                     placeholder="Email : "
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div className=" col-span-2">
                   <textarea
-                    className=" focus:outline-dashed outline-[#df4f3e] w-full bg-neutral-700 text-slate-400 px-5 py-2 rounded"
+                    className=" cursor-not-allowed focus:outline-dashed outline-[#df4f3e] w-full bg-neutral-700 text-slate-400 px-5 py-2 rounded"
                     type="text"
                     name="textarea"
                     placeholder="Your Message"
@@ -58,7 +58,7 @@ const Contact = () => {
               </div>
               <div className=" flex items-center">
                 <button
-                  className=" shadow-2xl shadow-zinc-950 ml-auto px-2 py-1 hover:bg-[#df4f3e] duration-200 rounded hover:text-black text-white text-xl font-bold font-mono"
+                  className=" cursor-not-allowed shadow-2xl shadow-zinc-950 ml-auto px-2 py-1 hover:bg-[#df4f3e] duration-200 rounded hover:text-black text-white text-xl font-bold font-mono"
                   type="submit"
                 >
                   Send Message

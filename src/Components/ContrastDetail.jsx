@@ -25,7 +25,7 @@ const ContrastDetail = () => {
                   Phone
                 </h1>
                 <p className=" xl:text-lg lg:text-base text-stone-400">
-                  <a href="tel:+959400297397" className=' underline underline-offset-1'>+959-400-297-397</a>
+                  <a href="tel:+959400297397" className=' hover:no-underline underline underline-offset-1'>+959-400-297-397</a>
                 </p>
               </div>
             </li>
@@ -50,7 +50,7 @@ const ContrastDetail = () => {
                   Mail
                 </h1>
                 <p className=" xl:text-lg lg:text-base text-stone-400">
-                  <a href="mailto:myae0517@gmail.com" className=' underline underline-offset-1'>myae0517@gmail.com</a>
+                  <a href="mailto:myae0517@gmail.com" className=' hover:no-underline underline underline-offset-1'>myae0517@gmail.com</a>
                 </p>
               </div>
             </li>
@@ -71,7 +71,7 @@ const ContrastDetail = () => {
                   Telegram
                 </h1>
                 <p className=" xl:text-lg lg:text-base text-stone-400">
-                  <a href="https://t.me/myae170903" className=' underline underline-offset-1'>@myae170903</a>
+                  <a href="https://t.me/myae170903" className=' hover:no-underline underline underline-offset-1'>@myae170903</a>
                 </p>
               </div>
             </li>
@@ -91,7 +91,7 @@ const ContrastDetail = () => {
                   GitHub
                 </h1>
                 <p className=" text-lg text-stone-400">
-                  <a href="https://github.com/aungchannmyae" className=' underline underline-offset-1'>aungchannmyae</a>
+                  <a href="https://github.com/aungchannmyae" className=' hover:no-underline underline underline-offset-1'>aungchannmyae</a>
                 </p>
               </div>
             </li>
@@ -111,7 +111,7 @@ const ContrastDetail = () => {
                   LinkedIn
                 </h1>
                 <p className=" text-lg text-stone-400">
-                  <a href="https://www.linkedin.com/in/aung-chan-myae-783883285" className=' underline underline-offset-1'>
+                  <a href="https://www.linkedin.com/in/aung-chan-myae-783883285" className=' hover:no-underline underline underline-offset-1'>
                     Aung Chan Myae
                   </a>
                 </p>
@@ -133,7 +133,7 @@ const ContrastDetail = () => {
                   Facebook
                 </h1>
                 <p className=" text-lg text-stone-400">
-                  <a href="https://www.facebook.com/profile.php?id=100038063593080&mibextid=ZbWKwl" className=' underline underline-offset-1'>
+                  <a href="https://www.facebook.com/profile.php?id=100038063593080&mibextid=ZbWKwl" className=' hover:no-underline underline underline-offset-1'>
                     Chan Myae
                   </a>
                 </p>
@@ -183,7 +183,7 @@ const ContrastDetail = () => {
                   Viber
                 </h1>
                 <p className=" text-lg text-stone-400">
-                  <a href="" className=' underline underline-offset-1'>+959 400 297 397</a>
+                  <a href="" className=' hover:no-underline underline underline-offset-1'>+959 400 297 397</a>
                 </p>
               </div>
             </li>
