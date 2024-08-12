@@ -1,22 +1,14 @@
-import React, { useContext } from "react";
-import { GeneralContext } from "../Context/GeneralProvider";
+
 import "animate.css";
+import useGeneralStore from "../store/useGeneralStore";
+import HeaderNavBar from "./HeaderNavBar";
 const Header = () => {
-  const navBarItems = ["Profile", "About Me", "Resume", "Projects", "Contract"];
-  const {
-    handleAboutMe,
-    handleResume,
-    handlePortfolio,
-    handleContact,
-    handleProfile,
-    handleSideBar,
-    aboutMe,
-    resume,
-    portfolio,
-    contact,
-    profile,
-    sideBar,
-  } = useContext(GeneralContext);
+
+  const { navBar, activeSideBar,sideBar } = useGeneralStore();
+  const handleSideBar = () => {
+    activeSideBar()
+  }
+
   return (
     <header className=" select-none animate__animated animate__slideInDown lg:w-full z-50 sticky max-lg:bg-black max-lg:bg-opacity-50 top-0 right-0">
       <section className=" max-lg:flex lg:hidden justify-end items-center px-3 py-2">
@@ -40,17 +32,11 @@ const Header = () => {
       </section>
       <div className=" bg-stone-600 flex">
         <ul className="max-lg:hidden xl:px-3 xl:pt-3 lg:px-3 lg:pt-3 xl:text-base lg:text-lg flex gap-1 items-center text-stone-400 ">
-          <li
-            onClick={handleProfile}
-            className={` ${
-              !profile
-                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-9 after:bg-[#df4f3e] bg-zinc-800"
-            } cursor-pointer  xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 relative flex justify-center rounded-t-lg`}
-          >
-            Profile
-          </li>
-          <li
+          {navBar.map((nav) => (
+            <HeaderNavBar key={nav.id} nav={nav}/>
+          ))}
+
+          {/* <li
             onClick={handleAboutMe}
             className={` ${
               !aboutMe
@@ -89,7 +75,7 @@ const Header = () => {
             } cursor-pointer xl:w-[150px] p xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
           >
             Contact
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>
@@ -100,7 +86,8 @@ export default Header;
 
 //Old NavBar//
 
-{/* <ul className=" shadow-2xl shadow-zinc-950 flex items-center w-fit ml-auto text-white bg-neutral-700 rounded-lg">
+{
+  /* <ul className=" shadow-2xl shadow-zinc-950 flex items-center w-fit ml-auto text-white bg-neutral-700 rounded-lg">
           <li onClick={handleProfile} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
             Profile
           </li>
@@ -116,4 +103,5 @@ export default Header;
           <li onClick={handleContact} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
             Contact
           </li>
-        </ul> */}
+        </ul> */
+}

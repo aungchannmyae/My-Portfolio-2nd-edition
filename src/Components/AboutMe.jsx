@@ -1,15 +1,16 @@
 import React, { useContext } from "react";
 import Container from "./Container";
-import GeneralProvider, { GeneralContext } from "../Context/GeneralProvider";
 import "animate.css";
+import useGeneralStore from "../store/useGeneralStore";
 
 const AboutMe = () => {
-  const { aboutMe, handleAboutMe } = useContext(GeneralContext);
+
+  const {navBar} = useGeneralStore();
   return (
-    <section className={` ${ !aboutMe && 'hidden animate__animated animate__fadeOut' } mb-10 animate__animated animate__fadeIn`}>
+    <section className={` ${ !navBar[1].page && 'hidden animate__animated animate__fadeOut' } mb-10 animate__animated animate__fadeIn`}>
       <Container>
         <div>
-          <h1 onClick={handleAboutMe} className=" max-lg:text-3xl max-lg:mb-3 max-lg:pb-3 select-none inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] xl:text-3xl lg:text-3xl text-white font-bold ">
+          <h1 className=" max-lg:text-3xl max-lg:mb-3 max-lg:pb-3 select-none inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] xl:text-3xl lg:text-3xl text-white font-bold ">
             About Me
           </h1>
           <p className="duration-200 hyphens-auto max-lg:mb-6 max-lg:text-xl xl:text-lg lg:text-xl text-stone-400 font-mono mb-10">

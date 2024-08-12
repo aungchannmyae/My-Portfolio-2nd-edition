@@ -1,13 +1,14 @@
-import React, { useContext } from "react";
-import { GeneralContext } from "../Context/GeneralProvider";
+
 import Container from "./Container";
+import useGeneralStore from "../store/useGeneralStore";
 
 const Portfolio = () => {
-  const { portfolio, handlePortfolio } = useContext(GeneralContext);
+
+  const {navBar} = useGeneralStore();
   return (
     <section
       className={` ${
-        !portfolio && " animate__animated animate__fadeOut hidden"
+        !navBar[3].page && " animate__animated animate__fadeOut hidden"
       } animate__animated animate__fadeIn mb-10 `}
     >
       <Container>

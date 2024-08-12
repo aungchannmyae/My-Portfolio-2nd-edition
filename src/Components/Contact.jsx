@@ -1,15 +1,16 @@
 import React, { useCallback, useContext } from "react";
 import Container from "./Container";
-import { GeneralContext } from "../Context/GeneralProvider";
 import "animate.css";
 import ContrastDetail from "./ContrastDetail";
+import useGeneralStore from "../store/useGeneralStore";
 
 const Contact = () => {
-  const { contact, handleContact } = useContext(GeneralContext);
+
+  const { navBar} = useGeneralStore();
   return (
     <section
       className={` ${
-        !contact && " animate__animated animate__fadeOut hidden"
+        !navBar[4].page && " animate__animated animate__fadeOut hidden"
       } animate__animated animate__fadeIn mb-10`}
     >
       <Container>

@@ -1,16 +1,15 @@
-import React, { useContext } from "react";
-import { GeneralContext } from "../Context/GeneralProvider";
+
 import Container from "./Container";
-import Contrast from "./Contrast";
 import ContrastDetail from "./ContrastDetail";
+import useGeneralStore from "../store/useGeneralStore";
 
 const Profile = () => {
-  const { profile, handleProfile } = useContext(GeneralContext);
-  const img = ["../src/assets/Aung Chan Myae.jpg"];
+
+  const {navBar} = useGeneralStore()
   return (
     <section
       className={` ${
-        !profile && " animate__animated animate__fadeOut hidden"
+        !navBar[0].page && " animate__animated animate__fadeOut hidden"
       } animate__animated animate__fadeIn `}
     >
       <Container>

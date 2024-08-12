@@ -1,15 +1,15 @@
 import React, { useContext } from "react";
 import Container from "./Container";
-import { GeneralContext } from "../Context/GeneralProvider";
 import "animate.css";
+import useGeneralStore from "../store/useGeneralStore";
 
 const Resume = () => {
-  const img = ["../src/assets/photo1.png", "../src/assets/photo2.png"];
-  const { resume, handleResume } = useContext(GeneralContext);
+
+  const {navBar} = useGeneralStore();
   return (
     <section
       className={` ${
-        !resume && "animate__animated animate__fadeOut hidden"
+        !navBar[2].page && "animate__animated animate__fadeOut hidden"
       } animate__animated animate__fadeIn mb-10`}
     >
       <Container>

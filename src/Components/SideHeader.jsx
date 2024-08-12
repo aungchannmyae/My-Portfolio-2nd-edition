@@ -1,34 +1,26 @@
 import React, { useContext } from "react";
 import "animate.css";
-import { GeneralContext } from "../Context/GeneralProvider";
+import useGeneralStore from "../store/useGeneralStore";
+import SideHeaderNavBar from "./SideHeaderNavBar";
 
 const SideHeader = () => {
-  const {
-    handleAboutMe,
-    handleResume,
-    handlePortfolio,
-    handleContact,
-    handleProfile,
-    handleSideBar,
-    aboutMe,
-    resume,
-    portfolio,
-    contact,
-    profile,
-    sideBar,
-  } = useContext(GeneralContext);
 
+  const { navBar, sideBar} = useGeneralStore();
   return (
     <>
       <section
         className={` ${
           !sideBar &&
-          " -translate-y-80 duration-500 "
-        } max-lg:inline-block lg:hidden select-none fixed top-16 right-1 max-sm:w-40 max-lg:w-60 rounded-md bg-stone-600 py-1 duration-500 mx-1  `}
+          " -translate-y-80 duration-700 "
+        } max-lg:inline-block lg:hidden select-none fixed top-16 right-1 max-sm:w-40 max-lg:w-60 rounded-md bg-stone-600 py-1 duration-700 mx-1  `}
       >
         <div className=" ">
           <ul className=" flex flex-col gap-1 justify-center text-xl">
-            <li
+            {navBar.map((nav) =>
+              <SideHeaderNavBar key={nav.id} nav={nav}/>
+            )}
+
+            {/* <li
               onClick={handleProfile}
               className={`${
                 profile ? "bg-zinc-800 text-white flex justify-start pl-0 duration-200" : " pl-9"
@@ -117,7 +109,7 @@ const SideHeader = () => {
                 <path d="M144,128a16,16,0,1,1-16-16A16,16,0,0,1,144,128Z"></path>
               </svg>
               Contact
-            </li>
+            </li> */}
           </ul>
         </div>
       </section>
