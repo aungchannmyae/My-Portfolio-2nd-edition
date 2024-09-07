@@ -75,7 +75,7 @@ const Resume = () => {
                     </li>
                     <li className=" ">
                       <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
-                        Started Learning Web<br className=" sm:hidden"></br>Development In MMS-IT<br className=" sm:hidden"></br>Since 2022
+                        Started Learning Web<br className=" sm:hidden"></br>Development In MMS-IT<br className=" sm:hidden"></br> Since 2022
                       </h1>
                     </li>
                   </ul>
@@ -164,21 +164,43 @@ const Resume = () => {
                       React.js
                     </h1>
                     <span className="lg:block xl:inline-block ml-[41px] lg:mb-3 text-white tex font-mono">
-                      ( 90% )
+                      ( 100% )
                     </span>
                     <span className=" block mx-auto mb-5 w-[93%] h-[5px] rounded-lg bg-neutral-700">
-                      <p className=" w-11/12 h-full bg-[#df4f3e] rounded-lg"></p>
+                      <p className=" w-12/12 h-full bg-[#df4f3e] rounded-lg"></p>
                     </span>
                   </div>
                   <div>
                     <h1 className=" ml-[41px] mb-2 lg:block xl:inline-block text-white font-semibold tracking-wider">
-                      Basic Knowledges in PHP, MySQL Database
+                      Next.js
                     </h1>
                     <span className="lg:block xl:inline-block ml-[41px] lg:mb-3 text-white tex font-mono">
-                      ( 50% )
+                      ( 10% )
                     </span>
                     <span className=" block mx-auto mb-5 w-[93%] h-[5px] rounded-lg bg-neutral-700">
-                      <p className=" w-6/12 h-full bg-[#df4f3e] rounded-lg"></p>
+                      <p className=" w-1/12 h-full bg-[#df4f3e] rounded-lg"></p>
+                    </span>
+                  </div>
+                  <div>
+                    <h1 className=" ml-[41px] mb-2 lg:block xl:inline-block text-white font-semibold tracking-wider">
+                      Rest API
+                    </h1>
+                    <span className="lg:block xl:inline-block ml-[41px] lg:mb-3 text-white tex font-mono">
+                      ( 100% )
+                    </span>
+                    <span className=" block mx-auto mb-5 w-[93%] h-[5px] rounded-lg bg-neutral-700">
+                      <p className=" w-12/12 h-full bg-[#df4f3e] rounded-lg"></p>
+                    </span>
+                  </div>
+                  <div>
+                    <h1 className=" ml-[41px] mb-2 lg:block xl:inline-block text-white font-semibold tracking-wider">
+                      Basic Knowledge in PHP, MySQL Database
+                    </h1>
+                    <span className="lg:block xl:inline-block ml-[41px] lg:mb-3 text-white tex font-mono">
+                      ( 90% )
+                    </span>
+                    <span className=" block mx-auto mb-5 w-[93%] h-[5px] rounded-lg bg-neutral-700">
+                      <p className=" w-11/12 h-full bg-[#df4f3e] rounded-lg"></p>
                     </span>
                   </div>
                   <div className=" ">
@@ -247,7 +269,7 @@ const Resume = () => {
                       <a href="">
                         <img
                           className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg w-full"
-                          src="../public/photo1.png"
+                          src="/public/photo1.png"
                           alt=""
                         />
                       </a>
@@ -264,7 +286,7 @@ const Resume = () => {
                       <a href="">
                         <img
                           className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg w-full"
-                          src="../public/photo2.png"
+                          src="/public/photo2.png"
                           alt=""
                         />
                       </a>
