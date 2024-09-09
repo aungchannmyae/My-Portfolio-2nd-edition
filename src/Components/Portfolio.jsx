@@ -25,7 +25,17 @@ const Portfolio = () => {
                   </a>
                 </div>
                 <p className=" px-3 text-lg text-stone-400"> <span className=" text-[#df4f3e]">React</span> E-Commerce Website</p>
-                <p className=" px-3 text-md text-stone-400">Design and Production by <a className=" text-[#df4f3e]" href="https://joyboi.netlify.app">aungchanmyae</a></p>
+                <p className=" px-3 text-md text-stone-400">Design and Production by <a className=" text-[#df4f3e]" target="_blank" href="https://joyboi.vercel.app">aungchanmyae</a></p>
+              </div>
+
+              <div className="bg-red overflow-hidden shadow-2xl pb-3 rounded-lg shadow-zinc-950">
+                <div className=" h-[200px] overflow-hidden mb-3">
+                  <a target="_blank" href="https://joyboi-e-commerce.vercel.app/">
+                    <img className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg h-full" src="/project-2.png" alt="" />
+                  </a>
+                </div>
+                <p className=" px-3 text-lg text-stone-400"> <span className=" text-[#df4f3e]">React</span> Personal Portfolio Website</p>
+                <p className=" px-3 text-md text-stone-400">Design and Production by <a className=" text-[#df4f3e]" target="_blank" href="https://joyboi.vercel.app">aungchanmyae</a></p>
               </div>
               
             </div>
