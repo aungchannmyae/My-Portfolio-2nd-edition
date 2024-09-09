@@ -21,7 +21,7 @@ const Portfolio = () => {
               <div className="bg-red overflow-hidden shadow-2xl pb-3 rounded-lg shadow-zinc-950">
                 <div className=" h-[200px] overflow-hidden mb-3">
                   <a target="_blank" href="https://joyboi-e-commerce.vercel.app/">
-                    <img className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg h-full" src="/public/project-1.png" alt="" />
+                    <img className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg h-full" src="/project-1.png" alt="" />
                   </a>
                 </div>
                 <p className=" px-3 text-lg text-stone-400"> <span className=" text-[#df4f3e]">React</span> E-Commerce Website</p>

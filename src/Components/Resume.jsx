@@ -269,7 +269,7 @@ const Resume = () => {
                       <a href="">
                         <img
                           className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg w-full"
-                          src="/public/photo1.png"
+                          src="/photo1.png"
                           alt=""
                         />
                       </a>
@@ -286,7 +286,7 @@ const Resume = () => {
                       <a href="">
                         <img
                           className=" select-none hover:opacity-70 duration-300 hover:scale-125 rounded-t-lg w-full"
-                          src="/public/photo2.png"
+                          src="/photo2.png"
                           alt=""
                         />
                       </a>

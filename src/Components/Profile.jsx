@@ -18,7 +18,7 @@ const Profile = () => {
             <div className=" max-sm:w-full max-md:w-8/12 md:w-10/12 xl:w-3/4 lg:w-12/12 xl:m-auto">
               <img
                 className=" select-none max-sm:rounded-full max-lg:rounded-full xl:rounded-full lg:rounded-full"
-                src="/public/Aung Chan Myae.jpg"
+                src="/Aung Chan Myae.jpg"
                 alt=""
               />
             </div>
