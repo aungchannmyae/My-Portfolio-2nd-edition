@@ -108,9 +108,14 @@ const Resume = () => {
                         Native Burmese.
                       </h1>
                     </li>
-                    <li className="">
+                    <li className=" mb-2">
                       <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
                         Intermediate English.
+                      </h1>
+                    </li>
+                    <li className="">
+                      <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
+                        Japanese (N4-level)
                       </h1>
                     </li>
                   </ul>
