@@ -20,8 +20,8 @@ const Header = () => {
           strokeWidth={1.5}
           stroke="currentColor"
           className={` ${
-            sideBar ? " rotate-[900deg] duration-700" : " rotate-0 duration-700"
-          } size-10 rounded-lg text-[#df4f3e] hover:bg-zinc-800`}
+            sideBar ? " rotate-[900deg] duration-700" : " rotate-0 duration-200"
+          } size-10 p-1 rounded-lg text-[#df4f3e] hover:bg-zinc-800 cursor-pointer`}
         >
           <path
             strokeLinecap="round"
@@ -36,46 +36,6 @@ const Header = () => {
             <HeaderNavBar key={nav.id} nav={nav}/>
           ))}
 
-          {/* <li
-            onClick={handleAboutMe}
-            className={` ${
-              !aboutMe
-                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
-          >
-            About Me
-          </li>
-          <li
-            onClick={handleResume}
-            className={` ${
-              !resume
-                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
-          >
-            Resume
-          </li>
-          <li
-            onClick={handlePortfolio}
-            className={` ${
-              !portfolio
-                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
-            } cursor-pointer xl:w-[150px] xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
-          >
-            Projects
-          </li>
-          <li
-            onClick={handleContact}
-            className={` ${
-              !contact
-                ? " bg-transparent text-stone-400 hover:bg-zinc-700 hover:bg-opacity-50 duration-300"
-                : " duration-200 after:inline-block after:w-8 after:h-1 after:rounded after:absolute after:top-12 after:bg-[#df4f3e] bg-zinc-800"
-            } cursor-pointer xl:w-[150px] p xl:px-3 xl:py-2 lg:w-[120px] lg:px-3 lg:py-2 flex justify-center rounded-t-lg`}
-          >
-            Contact
-          </li> */}
         </ul>
       </div>
     </header>
@@ -84,24 +44,4 @@ const Header = () => {
 
 export default Header;
 
-//Old NavBar//
 
-{
-  /* <ul className=" shadow-2xl shadow-zinc-950 flex items-center w-fit ml-auto text-white bg-neutral-700 rounded-lg">
-          <li onClick={handleProfile} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-            Profile
-          </li>
-          <li onClick={handleAboutMe} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-            About Me
-          </li>
-          <li onClick={handleResume} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-            Resume
-          </li>
-          <li onClick={handlePortfolio} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-            Projects
-          </li>
-          <li onClick={handleContact} className=" mx-3 my-1 px-2 py-1 h-8 relative text-white cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-[#df4f3e] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-[#df4f3e] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]">
-            Contact
-          </li>
-        </ul> */
-}
