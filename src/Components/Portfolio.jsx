@@ -7,9 +7,9 @@ const Portfolio = () => {
   const {navBar} = useGeneralStore();
   return (
     <section
-      className={` ${
-        !navBar[3].page && " animate__animated animate__fadeOut hidden"
-      } animate__animated animate__fadeIn mb-10 `}
+      // className={` ${
+      //   !navBar[2].page && " animate__animated animate__fadeOut hidden"
+      // } animate__animated animate__fadeIn mb-10 `}
     >
       <Container>
         <div>

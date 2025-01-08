@@ -7,9 +7,9 @@ const AboutMe = () => {
   const { navBar } = useGeneralStore();
   return (
     <section
-      className={` ${
-        !navBar[1].page && "hidden animate__animated animate__fadeOut"
-      } mb-10 animate__animated animate__fadeIn`}
+      // className={` ${
+      //   !navBar[1].page && "hidden animate__animated animate__fadeOut"
+      // } mb-10 animate__animated animate__fadeIn`}
     >
       <Container>
         <div>
@@ -41,7 +41,7 @@ const AboutMe = () => {
           <h1 className=" max-lg:text-2xl max-lg:mb-6 inline-block text-white font-bold xl:text-2xl lg:text-2xl mb-10">
             What I'm Doing.
           </h1>
-          <section className=" duration-200 grid max-sm:grid-cols-1 max-lg:gap-4 grid-cols-2 xl:gap-5 lg:gap-8">
+          <section className=" duration-200 grid max-lg:grid-cols-1 max-lg:gap-4 lg:grid-cols-2 xl:gap-5 lg:gap-8">
             <div className=" shadow-2xl shadow-zinc-950 p-5 inline-block rounded-lg">
               <h1 className=" underline underline-offset-2 max-lg:text-xl xl:text-xl lg:text-xl text-white mb-3">
                 Frontend Developer

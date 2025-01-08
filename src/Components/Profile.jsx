@@ -1,16 +1,14 @@
-
 import Container from "./Container";
 import ContrastDetail from "./ContrastDetail";
 import useGeneralStore from "../store/useGeneralStore";
 
 const Profile = () => {
-
-  const {navBar} = useGeneralStore()
+  const { navBar } = useGeneralStore();
   return (
     <section
-      className={` ${
-        !navBar[0].page && " animate__animated animate__fadeOut hidden"
-      } animate__animated animate__fadeIn `}
+    // className={` ${
+    //   !navBar[0].page && " animate__animated animate__fadeOut hidden"
+    // } animate__animated animate__fadeIn `}
     >
       <Container>
         <div className=" w-full grid max-sm:mb-5 max-lg:mb-10 max-sm:border-b-2 max-sm:border-r-2 max-md:border-b-4 max-lg:border-[#df4f3e] max-sm:grid-cols-2 max-md:gap-3 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-3 lg:gap-2 ">

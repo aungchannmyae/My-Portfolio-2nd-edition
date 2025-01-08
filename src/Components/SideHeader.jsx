@@ -9,8 +9,8 @@ const SideHeader = () => {
     <>
       <section
         className={` ${
-          !sideBar && " -translate-y-80 duration-700 "
-        } max-lg:inline-block lg:hidden select-none fixed top-16 right-1 max-sm:w-40 max-lg:w-60 rounded-md bg-stone-600 py-1 duration-700 mx-1  `}
+          !sideBar && " -translate-y-96 duration-700 "
+        } z-40 max-lg:inline-block lg:hidden select-none fixed top-16 right-1 max-sm:w-52 max-lg:w-72 rounded-md bg-stone-600 py-1 duration-700 mx-1  `}
       >
         <div className=" ">
           <ul className=" flex flex-col gap-1 justify-center text-xl">

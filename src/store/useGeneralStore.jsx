@@ -2,26 +2,42 @@ import { create } from "zustand";
 
 const useGeneralStore = create((set) => ({
   navBar: [
-    { id: 1, name: "Profile", isActive: true, page: true },
-    { id: 2, name: "About Me", isActive: false, page: false },
-    { id: 3, name: "Resume", isActive: false, page: false },
-    { id: 4, name: "Project", isActive: false, page: false },
-    { id: 5, name: "Contact", isActive: false, page: false },
+    { id: 1, name: "Profile", isRouteActive: false, page: false, route: "/" },
+    {
+      id: 2,
+      name: "About Me",
+      isRouteActive: false,
+      page: false,
+      route: "/about",
+    },
+    {
+      id: 3,
+      name: "Projects",
+      isRouteActive: false,
+      page: false,
+      route: "/projects",
+    },
+    {
+      id: 4,
+      name: "Contact",
+      isRouteActive: false,
+      page: false,
+      route: "/contact",
+    },
   ],
   activeNavBar: (navBarId) =>
     set((state) => ({
       navBar: state.navBar.map((el) =>
         el.id === navBarId
-          ? { ...el, isActive: true, page: true }
-          : { ...el, isActive: false, page: false }
+          ? { ...el, isRouteActive: true, page: true }
+          : { ...el, isRouteActive: false, page: false }
       ),
     })),
   sideBar: false,
-  activeSideBar: () => 
+  activeSideBar: () =>
     set((state) => ({
-      sideBar: !state.sideBar
-
-  }))
+      sideBar: !state.sideBar,
+    })),
 }));
 
 export default useGeneralStore;
