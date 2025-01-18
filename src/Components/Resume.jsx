@@ -1,19 +1,16 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Container from "./Container";
 import "animate.css";
 import useGeneralStore from "../store/useGeneralStore";
+import ScrollReveal from "scrollreveal";
 
 const Resume = () => {
+  const { navBar } = useGeneralStore();
 
-  const {navBar} = useGeneralStore();
   return (
-    <section
-      // className={` ${
-      //   !navBar[2].page && "animate__animated animate__fadeOut hidden"
-      // } animate__animated animate__fadeIn mb-10`}
-    >
+    <section className="">
       <Container>
-        <div>
+        <div className=" ">
           <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] max-lg:pb-3 max-lg:mb-3 max-lg:text-3xl xl:text-3xl lg:text-3xl text-white font-bold ">
             Resume
           </h1>
@@ -52,7 +49,8 @@ const Resume = () => {
                     </li>
                     <li className=" mb-2">
                       <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
-                        West Yangon<br className="sm:hidden"></br>Technology University
+                        West Yangon<br className="sm:hidden"></br>Technology
+                        University
                       </h1>
                       <p className=" max-lg:text-lg xl:text-base lg:text-lg text-stone-400 mx-[42px] font-mono">
                         2019
@@ -75,7 +73,9 @@ const Resume = () => {
                     </li>
                     <li className=" ">
                       <h1 className=" ml-[18px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider">
-                        Started Learning Web<br className=" sm:hidden"></br>Development In MMS-IT<br className=" sm:hidden"></br> Since 2022
+                        Started Learning Web<br className=" sm:hidden"></br>
+                        Development In MMS-IT<br className=" sm:hidden"></br>{" "}
+                        Since 2022
                       </h1>
                     </li>
                   </ul>
@@ -269,7 +269,7 @@ const Resume = () => {
 
               <section>
                 <div className=" duration-300 grid max-sm:grid-cols-1 max-lg:gap-6 xl:grid-cols-3 md:grid-cols-2 xl:gap-5 lg:gap-10">
-                  <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
+                  <div className=" bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
                     <div className=" h-[220px] overflow-hidden ">
                       <a href="">
                         <img
@@ -286,7 +286,7 @@ const Resume = () => {
                       </span>
                     </p>
                   </div>
-                  <div className="bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
+                  <div className=" bg-red overflow-hidden shadow-2xl rounded-lg shadow-zinc-950">
                     <div className=" h-[220px] overflow-hidden ">
                       <a href="">
                         <img

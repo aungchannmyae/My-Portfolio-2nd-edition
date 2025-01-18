@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContrastDetail = () => {
+const ContactDetail = () => {
   return (
     <>
     <ul className=" max-lg:mb-6 max-lg:px-5 max-lg:gap-1 lg:gap-3 duration-200 text-[#df4f3e] grid xl:grid-cols-3 sm:grid-cols-2 mb-10">
@@ -192,4 +192,4 @@ const ContrastDetail = () => {
   )
 }
 
-export default ContrastDetail
+export default ContactDetail

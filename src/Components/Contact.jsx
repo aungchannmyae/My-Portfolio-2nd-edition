@@ -1,24 +1,25 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import Container from "./Container";
 import "animate.css";
-import ContrastDetail from "./ContrastDetail";
+import ContactDetail from "./ContactDetail";
 import useGeneralStore from "../store/useGeneralStore";
+import ScrollReveal from "scrollreveal";
+
 
 const Contact = () => {
+
 
   const { navBar} = useGeneralStore();
   return (
     <section
-      // className={` ${
-      //   !navBar[3].page && " animate__animated animate__fadeOut hidden"
-      // } animate__animated animate__fadeIn mb-10`}
+    className=" "
     >
       <Container>
         <div>
           <h1 className=" inline-block pb-5 mb-5 border-b-4 border-[#df4f3e] max-lg:mb-3 max-lg:pb-3 max-lg:text-3xl xl:text-3xl lg:text-3xl text-white font-bold ">
             Contact
           </h1>
-          <ContrastDetail />
+          <ContactDetail />
           <legend className=" inline-block text-white font-bold max-lg:mb-3 max-lg:text-2xl xl:text-2xl lg:text-2xl mb-10">
             Contact Form
           </legend>

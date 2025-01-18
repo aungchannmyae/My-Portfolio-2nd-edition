@@ -21,7 +21,7 @@ html::-webkit-scrollbar{
 
 .hover-1 {
     background: linear-gradient(rgb(223, 79,62) 0 0) var(--p, 0) / var(--p, 0) no-repeat;
-    transition: 0.4s, background-position 0s;
+    transition: 0.5s, background-position 0s;
 }
 .hover-1:hover {
     --p: 100%;

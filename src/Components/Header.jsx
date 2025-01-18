@@ -2,6 +2,7 @@
 import "animate.css";
 import useGeneralStore from "../store/useGeneralStore";
 import HeaderNavBar from "./HeaderNavBar";
+import { motion } from "motion/react"
 const Header = () => {
 
   const { navBar, activeSideBar,sideBar } = useGeneralStore();
@@ -10,7 +11,11 @@ const Header = () => {
   }
 
   return (
-    <header className=" select-none animate__animated animate__slideInDown lg:w-full z-50 sticky max-lg:bg-black max-lg:bg-opacity-50 top-0 right-0">
+    <motion.header
+    initial={{translateY: "-100%"}}
+    animate={{translateY: 0}}
+    transition={{duration: 1}}
+    className=" select-none lg:w-full z-50 sticky max-lg:bg-black max-lg:bg-opacity-50 top-0 right-0">
       <section className=" max-lg:flex lg:hidden justify-end items-center px-3 py-2">
         <svg
           onClick={handleSideBar}
@@ -38,7 +43,7 @@ const Header = () => {
 
         </ul>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
