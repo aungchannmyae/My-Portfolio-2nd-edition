@@ -36,7 +36,7 @@ const Header = () => {
         </svg>
       </section>
       <div className=" bg-stone-600 flex">
-        <ul className="max-lg:hidden xl:px-3 xl:pt-3 lg:px-3 lg:pt-3 xl:text-base lg:text-lg flex gap-1 items-center text-stone-400 ">
+        <ul className="max-lg:hidden xl:px-3 xl:pt-3 lg:px-3 lg:pt-3 xl:text-base lg:text-lg flex gap-3 items-center text-stone-400 ">
           {navBar.map((nav) => (
             <HeaderNavBar key={nav.id} nav={nav}/>
           ))}

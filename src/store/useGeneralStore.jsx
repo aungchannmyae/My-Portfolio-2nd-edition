@@ -3,22 +3,16 @@ import { create } from "zustand";
 const useGeneralStore = create((set) => ({
   navBar: [
     { id: 1, name: "Profile", isRouteActive: false, page: false, route: "/" },
+
     {
       id: 2,
-      name: "About Me",
-      isRouteActive: false,
-      page: false,
-      route: "/about",
-    },
-    {
-      id: 3,
       name: "Projects",
       isRouteActive: false,
       page: false,
       route: "/projects",
     },
     {
-      id: 4,
+      id: 3,
       name: "Contact",
       isRouteActive: false,
       page: false,
