@@ -37,7 +37,7 @@ const Header = () => {
           onClick={handleSideBar}
           className="group max-lg:h-16 max-lg:w-16 max-sm:h-10 max-sm:w-10 rounded-md hover:bg-zinc-800 hover:bg-opacity-80 cursor-pointer p-2 duration-300"
         >
-          <div className="grid justify-items-center gap-1.5">
+          <div className="grid justify-center items-center gap-1.5">
             <span
               className={`h-1 w-8 rounded-full bg-[#df4f3e] duration-300 ${ sideBar && 'transition rotate-45 translate-y-2.5'} `}
             ></span>
