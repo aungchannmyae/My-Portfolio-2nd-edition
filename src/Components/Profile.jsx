@@ -158,8 +158,8 @@ const Profile = () => {
                           <Marquee
                             fade={true}
                             reverse={true}
-                            className=" max-lg:gap-8 lg:gap-20 max-lg:w-full lg:max-w-3xl duration-100"
-                            innerClassName=" max-lg:gap-8 lg:gap-20"
+                            className=" max-lg:gap-8 gap-20 max-lg:w-full lg:max-w-3xl duration-100"
+                            innerClassName=" max-lg:gap-8 gap-20"
                           >
                             <StackIcon className=" w-10 h-10" name="js" />
                             <StackIcon className=" w-10 h-10" name="reactjs" />
