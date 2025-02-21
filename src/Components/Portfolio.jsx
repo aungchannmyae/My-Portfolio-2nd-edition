@@ -31,7 +31,7 @@ const Portfolio = () => {
                 <div className=" h-[260px] p-2">
                   <a
                     target="_blank"
-                    href="https://sr-jewelry-design-by-pim.netlify.app/"
+                    href="#"
                   >
                     <img
                       className=" w-fit h-full select-none opacity-80 group-hover:opacity-100 duration-500 group-hover:scale-105 rounded-lg object-cover object-center"
@@ -78,14 +78,14 @@ const Portfolio = () => {
                     {" "}
                     <a
                       target="_blank"
-                      href="https://sr-jewelry-design-by-pim.netlify.app/"
+                      href="#"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       Website Link <LuArrowUpRight className="w-4 h-4" />
                     </a>
                     <a
                       target="_blank"
-                      href="https://github.com/aungchannmyae/SR-Jewelry-Design-by-Pim"
+                      href="#"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       GitHub <LuArrowUpRight className="w-4 h-4" />

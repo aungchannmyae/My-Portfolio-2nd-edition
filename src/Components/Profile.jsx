@@ -4,11 +4,13 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import { motion } from "framer-motion";
 import ScrollToTop from "./ScrollToTop";
-import { LuArrowUpRight } from "react-icons/lu";
+import { LuArrowUpRight, LuMail, LuMails } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
 import StackIcon from "tech-stack-icons";
+import { GrLocation } from "react-icons/gr";
+import { RxGithubLogo } from "react-icons/rx";
 
 const Profile = () => {
   return (
@@ -17,7 +19,7 @@ const Profile = () => {
       <div className=" flex max-lg:flex-col lg:flex-row gap-8 ">
         {/* Side Section */}
         <div className=" z-30 lg:min-w-52 lg:max-w-52">
-          <div className=" sticky lg:top-10 flex flex-col gap-4">
+          <div className=" sticky lg:top-10 flex max-md:flex-col md:flex-row lg:flex-col gap-4">
             <motion.div
               initial={{ opacity: 0.1, translateX: -16 }}
               whileInView={{ opacity: 1, translateX: 0 }}
@@ -25,13 +27,13 @@ const Profile = () => {
               className=" flex max-lg:justify-between max-lg: gap-3 items-center lg:flex-col bg-slate-200 rounded-lg p-3 shadow-2xl"
             >
               <img
-                className=" rounded-md max-lg:w-[140px] max-lg:h-48 lg:w-full lg:h-52 object-cover object-center"
+                className=" rounded-md max-md:w-[140px] md:w-[200px] md:h-60 max-md:h-48 lg:w-full lg:h-52 object-cover object-center"
                 src="./Aung Chan Myae.jpg"
                 alt=""
               />
               <div className=" flex flex-col max-lg:gap-2 lg:gap-3">
                 <h1 className=" text-2xl font-normal">
-                  I'm <br /> Aung Chan Myae
+                  I'm <br className=" " /> Aung Chan Myae
                 </h1>
                 <p>Junior Web Developer .</p>
                 <hr className=" border-black border-dotted" />
@@ -45,17 +47,25 @@ const Profile = () => {
               initial={{ opacity: 0.1, translateX: -16 }}
               whileInView={{ opacity: 1, translateX: 0 }}
               transition={{ duration: 0.5, delay: 0 }}
-              className=" bg-slate-200 rounded-lg p-3 flex flex-col gap-2 shadow-2xl"
+              className=" bg-slate-200 rounded-lg p-3 flex flex-col justify-center gap-2 shadow-2xl"
             >
-              <p>Yangon , Myanmar</p>
-              <a target="_blank" href="mailto:myae0517@gmail.com" className=" ">
-                myae0517@gmail.com
+              <p className=" inline-flex items-center gap-2">
+                <GrLocation />
+                Yangon , Myanmar
+              </p>
+              <a
+                target="_blank"
+                href="mailto:myae0517@gmail.com"
+                className=" inline-flex items-center gap-2 "
+              >
+                <LuMails /> myae0517@gmail.com
               </a>
               <a
                 target="_blank"
                 href="https://github.com/aungchannmyae"
-                className=" "
+                className=" inline-flex items-center gap-2 "
               >
+                <RxGithubLogo />
                 aungchannmyae
               </a>
             </motion.div>
@@ -275,8 +285,7 @@ const Profile = () => {
                               transition={{ duration: 0.8 }}
                               className=" max-lg:ml-[16px] lg:ml-[42px] lg:inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider"
                             >
-                              West Yangon
-                              Technology University
+                              West Yangon Technology University
                             </motion.h1>
                             <motion.p
                               initial={{ opacity: 0, translateX: 18 }}
@@ -380,7 +389,7 @@ const Profile = () => {
                       <div className="h-[280px] max-md:px-4 p-2">
                         <a target="_blank" href="#">
                           <img
-                            className=" max-sm:w-full sm:max-w-[400px] h-full select-none rounded-lg object-cover object-center"
+                            className=" max-sm:w-full md:max-w-[300px] lg:max-w-[400px] h-full select-none rounded-lg object-cover object-center"
                             src="/nextShop.png"
                             alt=""
                           />
@@ -438,7 +447,7 @@ const Profile = () => {
                     </motion.div>
                   </div>
                   <div className=" opacity-75 hover:opacity-100 duration-300 hover:translate-y-[-5px]">
-                  <motion.div
+                    <motion.div
                       initial={{ opacity: 0, translateY: 16 }}
                       whileInView={{ opacity: 1, translateY: 0 }}
                       transition={{ duration: 0.5, delay: 0.5 }}
@@ -450,7 +459,7 @@ const Profile = () => {
                           href="https://tinyverse-kindergarten.vercel.app/"
                         >
                           <img
-                            className=" max-sm:w-full sm:max-w-[400px] h-full select-none rounded-lg object-cover object-center"
+                            className=" max-sm:w-full md:max-w-[300px] lg:max-w-[400px] h-full select-none rounded-lg object-cover object-center"
                             src="/Tiny.png"
                             alt=""
                           />

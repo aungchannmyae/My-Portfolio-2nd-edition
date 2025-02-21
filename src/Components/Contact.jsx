@@ -76,7 +76,7 @@ const Contact = () => {
               </div>
               <div className=" flex items-center">
                 <button
-                  className=" cursor-not-allowed shadow-2xl shadow-zinc-950 ml-auto px-2 py-1 hover-1 duration-200 rounded hover:text-black text-white text-xl font-bold font-mono"
+                  className=" shadow-2xl shadow-zinc-950 ml-auto px-2 py-1 hover-1 duration-200 rounded hover:text-black text-white text-xl font-bold font-mono"
                   type="submit"
                   disabled={state.submitting}
                 >

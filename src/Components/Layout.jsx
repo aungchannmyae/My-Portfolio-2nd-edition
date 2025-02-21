@@ -20,12 +20,12 @@ const Layout = () => {
   }, [pathname]);
 
   return (
-    <section className="selection:bg-[#df4f3e] shadow-2xl shadow-zinc-950 selection:text-black rounded-2xl bg-zinc-800 mx-auto max-sm:my-0 xl:mt-12 max-xl:w-screen max-xl:h-screen xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative">
+    <section className="selection:bg-[#df4f3e] shadow-2xl shadow-zinc-950 selection:text-black lg:rounded-2xl bg-zinc-800 mx-auto max-sm:my-0 xl:mt-12 max-xl:w-screen max-xl:h-screen xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative">
       <Header />
       <SideHeader />
 
       <Suspense fallback={<Loading />}>
-        <div className=" max-lg:px-2 max-lg:pb-8 lg:p-6 xl:p-14">
+        <div className=" max-sm:px-2 max-sm:pb-8 sm:p-8 sm:pb-14 lg:p-6 xl:p-14">
           <Outlet />
         </div>
       </Suspense>
