@@ -46,7 +46,7 @@ const Header = () => {
           </div>
         </button>
       </section>
-      <div className="max-md:hidden bg-stone-600 flex">
+      <div className="hidden bg-stone-600 md:flex">
         <ul className=" md:px-3 md:pt-3 lg:px-3 lg:pt-3 md:text-base lg:text-lg flex gap-3 items-center text-stone-400 ">
           {navBar.map((nav) => (
             <HeaderNavBar key={nav.id} nav={nav} />
