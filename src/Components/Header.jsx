@@ -15,7 +15,7 @@ const Header = () => {
       transition={{ duration: 1 }}
       className=" select-none md:w-full z-50 sticky max-lg:bg-opacity-50 top-0 right-0"
     >
-      <section className=" max-lg:flex md:hidden justify-end items-center px-3 py-2">
+      <section className=" max-md:flex md:hidden justify-end items-center px-3 py-2">
         {/* <svg
           onClick={handleSideBar}
           xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +46,8 @@ const Header = () => {
           </div>
         </button>
       </section>
-      <div className=" bg-stone-600 flex">
-        <ul className="max-md:hidden md:px-3 md:pt-3 lg:px-3 lg:pt-3 md:text-base lg:text-lg flex gap-3 items-center text-stone-400 ">
+      <div className="max-md:hidden bg-stone-600 flex">
+        <ul className=" md:px-3 md:pt-3 lg:px-3 lg:pt-3 md:text-base lg:text-lg flex gap-3 items-center text-stone-400 ">
           {navBar.map((nav) => (
             <HeaderNavBar key={nav.id} nav={nav} />
           ))}
