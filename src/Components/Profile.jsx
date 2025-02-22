@@ -4,7 +4,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import { motion } from "framer-motion";
 import ScrollToTop from "./ScrollToTop";
-import { LuArrowUpRight, LuMail, LuMails } from "react-icons/lu";
+import { LuArrowUpRight, LuDownload, LuMail, LuMails } from "react-icons/lu";
 import { NavLink } from "react-router-dom";
 import { Marquee } from "@devnomic/marquee";
 import "@devnomic/marquee/dist/index.css";
@@ -90,6 +90,18 @@ const Profile = () => {
               Community.
             </p>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, translateX: 18 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <a href="/Aung Chan Myae Resume.pdf" download="Aung_Chan_Myae_CV.pdf">
+              <button className="inline-flex items-center gap-2 shadow-2xl shadow-zinc-950 w-fit px-2 py-1 hover-1 duration-200 rounded hover:text-black text-white text-xl font-semibold font-mono">
+                DownLoad CV <LuDownload className="w-5 h-5" />
+              </button>
+            </a>
+          </motion.div>
           {/* About section */}
           <section className="">
             <div className=" ">
