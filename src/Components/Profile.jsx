@@ -35,7 +35,7 @@ const Profile = () => {
                 <h1 className=" text-2xl font-normal">
                   I'm <br className=" " /> Aung Chan Myae
                 </h1>
-                <p>Junior Web Developer .</p>
+                <p>Web Developer .</p>
                 <hr className=" border-black border-dotted" />
                 <p className=" text-sm italic">
                   Bringing visual designs to life in a way that is interactive,
@@ -78,16 +78,14 @@ const Profile = () => {
             <h1 className=" text-5xl font-bold text-white mb-5">
               {" "}
               Hello I'm <br />{" "}
-              <span className=" text-[#df4f3e]">
-                Junior Frontend Developer
-              </span>{" "}
+              <span className=" text-[#df4f3e]">Frontend Developer</span>{" "}
             </h1>
             <p className=" text-wrap text-stone-400">
-              Started my web development journey since 2022. Now I am exploring
-              my first time experiences as a Junior Web Developer Position. I
-              consider myself a responsible and orderly person. Always looking
-              forward the best opportunities in this Software Development
-              Community.
+              I began working in web development in 2022. I think of myself as
+              someone who is responsible and organized. Always looking forward
+              to the best opportunities in this software development community.
+              In 2024, I actively participated as a Frontend developer in three
+              real-world projects that all involved admin dashboards.
             </p>
           </div>
 
@@ -96,7 +94,10 @@ const Profile = () => {
             whileInView={{ opacity: 1, translateX: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <a href="/Aung Chan Myae Resume.pdf" download="Aung_Chan_Myae_CV.pdf">
+            <a
+              href="/Aung Chan Myae Resume.pdf"
+              download="Aung_Chan_Myae_CV.pdf"
+            >
               <button className="inline-flex items-center gap-2 shadow-2xl shadow-zinc-950 w-fit px-2 py-1 hover-1 duration-200 rounded hover:text-black text-white text-xl font-semibold font-mono">
                 DownLoad CV <LuDownload className="w-5 h-5" />
               </button>
@@ -200,7 +201,7 @@ const Profile = () => {
                   </section>
                 </div>
 
-                <div className=" pl-3" id=" experience">
+                {/* <div className=" pl-3" id=" experience">
                   <motion.h1
                     initial={{ opacity: 0, translateX: 18 }}
                     whileInView={{ opacity: 1, translateX: 0 }}
@@ -230,11 +231,10 @@ const Profile = () => {
                       transition={{ duration: 0.8 }}
                       className=" max-lg:text-lg xl:text-base lg:text-lg lg:mx-[41px] text-stone-400 font-mono"
                     >
-                      Software Developer who is seeking the work Experiences in
-                      the position as a junior Front End Developer.
+                      
                     </motion.p>
                   </section>
-                </div>
+                </div> */}
                 <div className=" pl-3" id=" education">
                   <motion.h1
                     initial={{ opacity: 0, translateX: 18 }}
@@ -379,7 +379,7 @@ const Profile = () => {
             </div>
           </section>
 
-          <section className="">
+          {/* <section className="">
             <div>
               <motion.h1
                 initial={{ opacity: 0, translateX: 18 }}
@@ -542,7 +542,7 @@ const Profile = () => {
                 </div>
               </section>
             </div>
-          </section>
+          </section> */}
 
           <Contact />
         </div>

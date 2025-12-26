@@ -31,7 +31,7 @@ const Portfolio = () => {
                 <div className=" h-[260px] p-2">
                   <a
                     target="_blank"
-                    href="#"
+                    // href="#"
                   >
                     <img
                       className=" w-fit h-full select-none opacity-80 group-hover:opacity-100 duration-500 group-hover:scale-105 rounded-lg object-cover object-center"
@@ -78,14 +78,14 @@ const Portfolio = () => {
                     {" "}
                     <a
                       target="_blank"
-                      href="#"
+                      // href="#"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       Website Link <LuArrowUpRight className="w-4 h-4" />
                     </a>
                     <a
                       target="_blank"
-                      href="#"
+                      // href="#"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       GitHub <LuArrowUpRight className="w-4 h-4" />
@@ -105,7 +105,7 @@ const Portfolio = () => {
                 <div className=" h-[260px] p-2">
                   <a
                     target="_blank"
-                    href="https://sr-jewelry-design-by-pim.netlify.app/"
+                    // href="https://sr-jewelry-design-by-pim.netlify.app/"
                   >
                     <img
                       className=" w-fit h-full select-none opacity-80 group-hover:opacity-100 duration-500 group-hover:scale-105 rounded-lg object-cover object-top"
@@ -163,14 +163,14 @@ const Portfolio = () => {
                     {" "}
                     <a
                       target="_blank"
-                      href="https://sr-jewelry-design-by-pim.netlify.app/"
+                      // href="https://sr-jewelry-design-by-pim.netlify.app/"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       Website Link <LuArrowUpRight className="w-4 h-4" />
                     </a>
                     <a
                       target="_blank"
-                      href="https://github.com/aungchannmyae/SR-Jewelry-Design-by-Pim"
+                      // href="https://github.com/aungchannmyae/SR-Jewelry-Design-by-Pim"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       GitHub <LuArrowUpRight className="w-4 h-4" />
@@ -190,7 +190,7 @@ const Portfolio = () => {
                 <div className=" h-[260px] p-2">
                   <a
                     target="_blank"
-                    href="https://tinyverse-kindergarten.vercel.app/"
+                    // href="https://tinyverse-kindergarten.vercel.app/"
                   >
                     <img
                       className=" w-fit h-full select-none opacity-80 group-hover:opacity-100 duration-500 group-hover:scale-105 rounded-lg object-cover object-top"
@@ -236,14 +236,14 @@ const Portfolio = () => {
                     {" "}
                     <a
                       target="_blank"
-                      href="https://tinyverse-kindergarten.vercel.app/"
+                      // href="https://tinyverse-kindergarten.vercel.app/"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       Website Link <LuArrowUpRight className="w-4 h-4" />
                     </a>
                     <a
                       target="_blank"
-                      href="https://github.com/aungchannmyae/TinyverseKindergarten-MCF4-MCP3"
+                      // href="https://github.com/aungchannmyae/TinyverseKindergarten-MCF4-MCP3"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       GitHub <LuArrowUpRight className="w-4 h-4" />
@@ -263,7 +263,7 @@ const Portfolio = () => {
                 <div className=" h-[260px] p-2">
                   <a
                     target="_blank"
-                    href="https://estatelaproperty-mcf4-mcp3.netlify.app/"
+                    // href="https://estatelaproperty-mcf4-mcp3.netlify.app/"
                   >
                     <img
                       className=" w-full h-full select-none opacity-80 group-hover:opacity-100 duration-500 group-hover:scale-105 rounded-lg object-cover object-top"
@@ -312,14 +312,14 @@ const Portfolio = () => {
                     {" "}
                     <a
                       target="_blank"
-                      href="https://estatelaproperty-mcf4-mcp3.netlify.app/"
+                      // href="https://estatelaproperty-mcf4-mcp3.netlify.app/"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       Website Link <LuArrowUpRight className="w-4 h-4" />
                     </a>
                     <a
                       target="_blank"
-                      href="https://github.com/thet-naing-lin/EstatelaProperty-MCF4-MCP3"
+                      // href="https://github.com/thet-naing-lin/EstatelaProperty-MCF4-MCP3"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       GitHub <LuArrowUpRight className="w-4 h-4" />
@@ -339,7 +339,7 @@ const Portfolio = () => {
                 <div className=" h-[260px] p-2">
                   <a
                     target="_blank"
-                    href="https://joyboi-e-commerce.vercel.app/"
+                    // href="https://joyboi-e-commerce.vercel.app/"
                   >
                     <img
                       className=" w-fit h-full select-none opacity-80 group-hover:opacity-100 duration-500 group-hover:scale-105 rounded-lg object-cover object-top"
@@ -389,14 +389,14 @@ const Portfolio = () => {
                     {" "}
                     <a
                       target="_blank"
-                      href="https://joyboi-e-commerce.vercel.app/"
+                      // href="https://joyboi-e-commerce.vercel.app/"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       Website Link <LuArrowUpRight className="w-4 h-4" />
                     </a>
                     <a
                       target="_blank"
-                      href="https://github.com/aungchannmyae/react-E-commerce"
+                      // href="https://github.com/aungchannmyae/react-E-commerce"
                       className=" hover:translate-x-1 duration-200 inline-flex justify-center items-center gap-2 text-[#df4f3e]"
                     >
                       GitHub <LuArrowUpRight className="w-4 h-4" />
