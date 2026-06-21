@@ -1,11 +1,10 @@
 import "animate.css";
-import useGeneralStore from "../store/useGeneralStore";
+import navBar from "../constants/navBar";
 import HeaderNavBar from "./HeaderNavBar";
 import { motion } from "motion/react";
-const Header = () => {
-  const { navBar, activeSideBar, sideBar } = useGeneralStore();
+const Header = ({ sideBar, onToggleSideBar }) => {
   const handleSideBar = () => {
-    activeSideBar();
+    onToggleSideBar();
   };
 
   return (
@@ -47,7 +46,7 @@ const Header = () => {
         </button>
       </section>
       <div className="hidden bg-stone-600 md:flex">
-        <ul className=" md:px-3 md:pt-3 lg:px-3 lg:pt-3 md:text-base lg:text-lg flex gap-3 items-center text-stone-400 ">
+        <ul className=" md:px-3 md:pt-3 lg:px-3 lg:pt-3 md:text-base lg:text-lg flex gap-2 items-end text-stone-400 ">
           {navBar.map((nav) => (
             <HeaderNavBar key={nav.id} nav={nav} />
           ))}

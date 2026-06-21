@@ -1,5 +1,4 @@
-import React, { Suspense, useEffect } from "react";
-import GeneralProvider from "../Context/GeneralProvider";
+import React, { Suspense, useEffect, useState } from "react";
 import Header from "./Header";
 import SideHeader from "./SideHeader";
 import { Outlet, useLocation } from "react-router-dom";
@@ -8,7 +7,16 @@ import Loading from "./Loading";
 const Layout = () => {
   const { pathname } = useLocation();
 
+  // Mobile side menu open/closed state — lifted here so the sibling
+  // <Header /> (the toggle) and <SideHeader /> (the menu) can share it.
+  const [sideBar, setSideBar] = useState(false);
+  const toggleSideBar = () => setSideBar((open) => !open);
+  const closeSideBar = () => setSideBar(false);
+
   useEffect(() => {
+    // Close the mobile menu whenever the route changes.
+    setSideBar(false);
+
     const section = document.querySelector("section.scrollbar-hide");
     if (section) {
       section.scrollTo({
@@ -21,8 +29,8 @@ const Layout = () => {
 
   return (
     <section className="selection:bg-[#df4f3e] shadow-2xl shadow-zinc-950 selection:text-black lg:rounded-2xl bg-zinc-800 mx-auto max-sm:my-0 xl:mt-12 max-xl:w-screen max-xl:h-screen xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative">
-      <Header />
-      <SideHeader />
+      <Header sideBar={sideBar} onToggleSideBar={toggleSideBar} />
+      <SideHeader sideBar={sideBar} onCloseSideBar={closeSideBar} />
 
       <Suspense fallback={<Loading />}>
         <div className=" max-sm:px-2 max-sm:pb-8 sm:p-8 sm:pb-14 lg:p-6 xl:p-14">
