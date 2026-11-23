@@ -1,12 +1,20 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./public/index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+const config = {
+  content: ["./src/**/*.{js,jsx,ts,tsx,mdx}"],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        marquee: {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(calc(-100% - var(--gap)))" },
+        },
+      },
+      animation: {
+        marquee: "marquee var(--duration) linear infinite",
+      },
+    },
   },
   plugins: [],
-}
+};
 
+export default config;

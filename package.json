@@ -1,42 +1,28 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.1.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
   },
   "dependencies": {
-    "@devnomic/marquee": "^1.0.3",
-    "@formspree/react": "^2.5.1",
-    "@lottiefiles/dotlottie-react": "^0.12.1",
-    "animate.css": "^4.1.1",
-    "lightgallery": "^2.8.2",
-    "motion": "^11.18.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^5.4.0",
-    "react-loading-indicators": "^1.0.0",
-    "react-type-animation": "^3.2.0",
-    "scrollreveal": "^4.0.9",
-    "tech-stack-icons": "^2.1.0",
-    "zustand": "^4.5.4"
+    "@formspree/react": "^3.0.0",
+    "motion": "^14.14.0",
+    "next": "^16.4.6",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-icons": "^5.7.0",
+    "react-loading-indicators": "^1.0.1",
+    "tech-stack-icons": "^3.7.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.64",
-    "@types/react-dom": "^18.2.21",
-    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.0",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.4.6",
     "postcss": "^8.4.40",
-    "react-router-dom": "^6.28.1",
-    "tailwindcss": "^3.4.7",
-    "vite": "^5.1.6"
+    "tailwindcss": "^3.4.7"
   }
 }
