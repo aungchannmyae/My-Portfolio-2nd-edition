@@ -6,7 +6,7 @@ const profile = {
   headline: "Frontend Developer",
   tagline:
     "Bringing visual designs to life in a way that is interactive, efficient, and user-friendly.",
-  photo: "/Aung Chan Myae.jpg",
+  photo: { src: "/Aung Chan Myae.jpg", width: 3072, height: 4096 },
   location: "Yangon , Myanmar",
   email: "myae0517@gmail.com",
   github: { username: "aungchannmyae", url: "https://github.com/aungchannmyae" },

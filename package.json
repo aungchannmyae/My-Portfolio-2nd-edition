@@ -10,12 +10,17 @@
   },
   "dependencies": {
     "@formspree/react": "^3.0.0",
+    "@sanity/icons": "^5.4.0",
+    "@sanity/vision": "^6.25.0",
     "motion": "^14.14.0",
     "next": "^16.4.6",
+    "next-sanity": "^13.5.1",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-icons": "^5.7.0",
     "react-loading-indicators": "^1.0.1",
+    "sanity": "^6.25.0",
+    "styled-components": "^6.7.0",
     "tech-stack-icons": "^3.7.4"
   },
   "devDependencies": {

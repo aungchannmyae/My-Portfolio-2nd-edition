@@ -1,10 +1,15 @@
 import ProjectCard from "@/components/ProjectCard";
 import SectionTitle from "@/components/SectionTitle";
-import projects from "@/data/projects";
+import { getProjects } from "@/sanity/content";
 
 export const metadata = { title: "Projects" };
 
-export default function ProjectsPage() {
+// Refresh from Sanity at most once a minute (keep in sync with REVALIDATE_SECONDS).
+export const revalidate = 60;
+
+export default async function ProjectsPage() {
+  const projects = await getProjects();
+
   return (
     <section>
       <SectionTitle>Projects</SectionTitle>
