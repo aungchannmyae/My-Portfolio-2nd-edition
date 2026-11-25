@@ -1,9 +1,10 @@
 import Profile from "@/components/Profile";
-import profile from "@/data/profile";
+import { getProfile } from "@/sanity/content";
 
-// Rebuild at most once a day, so "( 2024 - <current year> )" stays current.
-export const revalidate = 86400;
+// Refresh from Sanity at most once a minute (keep in sync with REVALIDATE_SECONDS).
+export const revalidate = 60;
 
-export default function HomePage() {
+export default async function HomePage() {
+  const profile = await getProfile();
   return <Profile profile={profile} />;
 }

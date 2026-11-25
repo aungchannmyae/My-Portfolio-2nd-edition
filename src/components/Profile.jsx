@@ -55,10 +55,10 @@ const Profile = ({ profile }) => {
           >
             <Image
               className=" rounded-md max-md:w-[140px] md:w-[200px] md:h-60 max-md:h-48 lg:w-full lg:h-52 object-cover object-center"
-              src={profile.photo}
+              src={profile.photo.src}
               alt={`Photo of ${profile.name}`}
-              width={300}
-              height={400}
+              width={profile.photo.width}
+              height={profile.photo.height}
               sizes="(max-width: 768px) 140px, 200px"
               priority
             />
@@ -187,9 +187,12 @@ const Profile = ({ profile }) => {
                     as="p"
                     className=" max-lg:ml-[16px] lg:ml-[42px] inline-block max-lg:text-lg xl:text-xl lg:text-xl text-white font-semibold tracking-wider"
                   >
-                    {profile.learningNote[0]}
-                    <br />
-                    {profile.learningNote[1]}
+                    {profile.learningNote.map((line, i) => (
+                      <span key={i}>
+                        {i > 0 && <br />}
+                        {line}
+                      </span>
+                    ))}
                   </Reveal>
                 </li>
               </ul>
