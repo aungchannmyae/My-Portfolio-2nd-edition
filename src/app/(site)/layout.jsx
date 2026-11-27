@@ -1,4 +1,5 @@
 import Shell from "@/components/Shell";
+import SiteBackground from "@/components/SiteBackground";
 import "./globals.css";
 
 const title = "Aung Chan Myae Personal";
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className=" scrollbar-hide bg-slate-200">
+        <SiteBackground />
         <main>
           <Shell>{children}</Shell>
         </main>

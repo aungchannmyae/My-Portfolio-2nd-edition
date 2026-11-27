@@ -28,7 +28,7 @@ const Shell = ({ children }) => {
   return (
     <section
       ref={windowRef}
-      className="selection:bg-[#df4f3e] shadow-2xl shadow-zinc-950 selection:text-black lg:rounded-2xl bg-zinc-800 mx-auto max-sm:my-0 xl:mt-12 max-xl:w-screen max-xl:h-screen xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative"
+      className="selection:bg-[#df4f3e] shadow-2xl shadow-zinc-950 selection:text-black lg:rounded-2xl window-surface ring-1 ring-white/5 mx-auto max-sm:my-0 xl:mt-12 max-xl:w-screen max-xl:h-screen xl:w-[1200px] xl:h-[600px] duration-500 scroll-smooth overflow-auto scrollbar-hide relative"
     >
       <Header
         sideBar={sideBar}
